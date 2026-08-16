@@ -6,6 +6,8 @@ import { ContactForm } from "@/components/contact/ContactForm";
 import { MapEmbed } from "@/components/contact/MapEmbed";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 
+import { MapPin, Phone, Mail, Clock } from "@/components/ui/Icons";
+
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact Gimpex Overseas in Kolkata for tea machinery quotations, spares and engineering support.",
@@ -50,10 +52,7 @@ export default function ContactPage() {
               <div className="cbox green">
                 <div className="iline">
                   <span className="ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z" />
-                      <circle cx="12" cy="10" r="2.6" />
-                    </svg>
+                    <MapPin size={20} strokeWidth={1.8} />
                   </span>
                   <div>
                     <div className="lb">Office &amp; works</div>
@@ -67,9 +66,7 @@ export default function ContactPage() {
 
                 <div className="iline">
                   <span className="ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 4h4l2 5-2.5 1.5a12 12 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" />
-                    </svg>
+                    <Phone size={20} strokeWidth={1.8} />
                   </span>
                   <div>
                     <div className="lb">Phone</div>
@@ -83,10 +80,7 @@ export default function ContactPage() {
 
                 <div className="iline">
                   <span className="ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="3" y="5" width="18" height="14" rx="2.5" />
-                      <path d="M3.5 7.5l8.5 6 8.5-6" />
-                    </svg>
+                    <Mail size={20} strokeWidth={1.8} />
                   </span>
                   <div>
                     <div className="lb">Email</div>
@@ -100,10 +94,7 @@ export default function ContactPage() {
 
                 <div className="iline">
                   <span className="ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7.2V12l3.2 3.2" />
-                    </svg>
+                    <Clock size={20} strokeWidth={1.8} />
                   </span>
                   <div>
                     <div className="lb">Hours</div>
@@ -112,30 +103,10 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="cbox">
-                <span className="eyebrow">Export enquiries</span>
-                <p className="small" style={{ marginTop: "12px" }}>
-                  We ship worldwide and handle documentation, container stuffing and on-site commissioning. Tell us your port and we&apos;ll quote delivered.
-                </p>
-                <div className="iline" style={{ marginTop: "18px" }}>
-                  <span className="ic">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M3.2 9.6h17.6M3.2 14.4h17.6M12 3a15 15 0 010 18 15 15 0 010-18z" />
-                    </svg>
-                  </span>
-                  <div>
-                    <div className="lb">Currently serving</div>
-                    <div className="vl">20+ countries across four continents</div>
-                  </div>
-                </div>
-              </div>
+              <MapEmbed />
             </div>
           </div>
 
-          <div style={{ marginTop: "18px" }}>
-            <MapEmbed />
-          </div>
         </div>
       </section>
     </>

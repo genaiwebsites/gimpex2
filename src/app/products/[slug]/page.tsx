@@ -7,6 +7,8 @@ import { SchematicRenderer } from "@/components/schematics/SchematicRenderer";
 import { ProductCard } from "@/components/products/ProductCard";
 import { Button } from "@/components/ui/Button";
 
+import { CheckCircle2 } from "@/components/ui/Icons";
+
 interface ProductPageProps {
   params: Promise<{
     slug: string;
@@ -123,9 +125,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <ul className="feat rvg in">
             {product.features.map((feature, idx) => (
               <li key={idx}>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4 12.5l5.2 5.2L20 7" />
-                </svg>
+                <CheckCircle2 size={18} strokeWidth={2} style={{ color: "var(--green)", flexShrink: 0, marginTop: 2 }} />
                 <span>{feature}</span>
               </li>
             ))}

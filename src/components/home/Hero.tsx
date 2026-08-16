@@ -19,7 +19,6 @@ export const Hero: React.FC = () => {
           <div className="container">
             <div className="hero-grid">
               <div>
-                <span className="badge">Tea processing technology since 1997</span>
                 <h1>
                   Machinery that turns <em>green leaf</em> into finished tea.
                 </h1>

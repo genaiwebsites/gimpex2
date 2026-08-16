@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { CountrySelect } from "@/components/ui/CountrySelect";
 
+import { CheckCircle2 } from "@/components/ui/Icons";
+
 const machineryOptions = [
   "Complete CTC line",
   "Complete orthodox line",
@@ -164,9 +166,7 @@ export const ContactForm: React.FC = () => {
 
       {submitted && (
         <div className="ok-note show" role="status">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: "20px", height: "20px", flexShrink: 0 }}>
-            <path d="M4 12.5l5.2 5.2L20 7" />
-          </svg>
+          <CheckCircle2 size={20} strokeWidth={2} style={{ color: "var(--lime)", flexShrink: 0 }} />
           <span>Thank you — the engineering desk will be in touch shortly.</span>
         </div>
       )}

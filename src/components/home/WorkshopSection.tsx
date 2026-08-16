@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
+import { Gauge, ShieldCheck, Wrench } from "@/components/ui/Icons";
 
 export const WorkshopSection: React.FC = () => {
   return (
@@ -31,10 +32,7 @@ export const WorkshopSection: React.FC = () => {
             <div className="fcards">
               <div className="fcard">
                 <span className="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="3.2" />
-                    <path d="M12 2.8v2.6M12 18.6v2.6M4.6 7.4l2.2 1.3M17.2 15.3l2.2 1.3M4.6 16.6l2.2-1.3M17.2 8.7l2.2-1.3" />
-                  </svg>
+                  <Gauge size={22} strokeWidth={1.7} />
                 </span>
                 <div>
                   <h4>Built to your leaf, not a brochure</h4>
@@ -44,10 +42,7 @@ export const WorkshopSection: React.FC = () => {
 
               <div className="fcard">
                 <span className="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M12 3l7.5 3v5.6c0 4.6-3.1 8.1-7.5 9.4-4.4-1.3-7.5-4.8-7.5-9.4V6z" />
-                    <path d="M9 12l2.2 2.2L15.5 10" />
-                  </svg>
+                  <ShieldCheck size={22} strokeWidth={1.7} />
                 </span>
                 <div>
                   <h4>Load-tested before despatch</h4>
@@ -57,10 +52,7 @@ export const WorkshopSection: React.FC = () => {
 
               <div className="fcard">
                 <span className="ic">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M14.5 5.5a4.5 4.5 0 016 5.6l-9 9-3.6-3.6 9-9a4.5 4.5 0 01-2.4-2z" />
-                    <path d="M7.9 16.5L4 20.4" />
-                  </svg>
+                  <Wrench size={22} strokeWidth={1.7} />
                 </span>
                 <div>
                   <h4>Commissioned on site, spares for life</h4>

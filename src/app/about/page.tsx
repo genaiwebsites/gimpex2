@@ -5,6 +5,7 @@ import { milestones } from "@/data/milestones";
 import { StatCounter } from "@/components/ui/StatCounter";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
+import { SlidersHorizontal, ClipboardCheck, TrendingUp, ShieldCheck } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
   title: "About",
@@ -16,46 +17,25 @@ const qualityCards = [
     code: "Q—01",
     title: "Specific, never generic",
     desc: "Machinery built to each customer's process — never a one-size build off the shelf.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="3.2" />
-        <path d="M12 2.8v2.6M12 18.6v2.6M4.6 7.4l2.2 1.3M17.2 15.3l2.2 1.3M4.6 16.6l2.2-1.3M17.2 8.7l2.2-1.3" />
-      </svg>
-    ),
+    icon: <SlidersHorizontal size={22} strokeWidth={1.6} />,
   },
   {
     code: "Q—02",
     title: "Documented at every stage",
     desc: "Material, machining, assembly and load test are each inspected and recorded.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 3l7.5 3v5.6c0 4.6-3.1 8.1-7.5 9.4-4.4-1.3-7.5-4.8-7.5-9.4V6z" />
-        <path d="M9 12l2.2 2.2L15.5 10" />
-      </svg>
-    ),
+    icon: <ClipboardCheck size={22} strokeWidth={1.6} />,
   },
   {
     code: "Q—03",
     title: "Continual improvement",
     desc: "Identified operational areas are reviewed and improved through a disciplined QMS cycle.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 21c6-2 8.4-7 8.4-14C13.2 7 8 9 6 15c0 3 2.2 6 6 6z" />
-        <path d="M12 21c0-6 2.8-10 8-13" />
-      </svg>
-    ),
+    icon: <TrendingUp size={22} strokeWidth={1.6} />,
   },
   {
     code: "Q—04",
     title: "Supported for life",
     desc: "Commissioning, operator training and pattern-matched spares for every machine we ship.",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" />
-        <circle cx="7" cy="18" r="1.8" />
-        <circle cx="17.5" cy="18" r="1.8" />
-      </svg>
-    ),
+    icon: <ShieldCheck size={22} strokeWidth={1.6} />,
   },
 ];
 
