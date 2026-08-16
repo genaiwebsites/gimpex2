@@ -20,6 +20,8 @@ export const StatCounter: React.FC<StatCounterProps> = ({
   const [displayValue, setDisplayValue] = useState("0");
   const ref = useRef<HTMLSpanElement>(null);
   const animatedRef = useRef(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -34,43 +36,44 @@ export const StatCounter: React.FC<StatCounterProps> = ({
       return;
     }
 
+    const startAnimation = () => {
+      if (animatedRef.current) return;
+      animatedRef.current = true;
+
+      const run = () => {
+        let startTimestamp: number | null = null;
+
+        const step = (timestamp: number) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const elapsed = timestamp - startTimestamp;
+          const progress = Math.min(elapsed / duration, 1);
+          // Quartic deceleration: 1 - (1 - t)^4
+          const eased = 1 - Math.pow(1 - progress, 4);
+          const current = Math.round(value * eased);
+          setDisplayValue(current.toLocaleString() + suffix);
+
+          if (progress < 1) {
+            rafRef.current = requestAnimationFrame(step);
+          } else {
+            setDisplayValue(value.toLocaleString() + suffix);
+          }
+        };
+
+        rafRef.current = requestAnimationFrame(step);
+      };
+
+      if (delay > 0) {
+        timerRef.current = setTimeout(run, delay);
+      } else {
+        run();
+      }
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting && !animatedRef.current) {
-            animatedRef.current = true;
-
-            const startAnimation = () => {
-              let startTimestamp: number | null = null;
-
-              const step = (timestamp: number) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const elapsed = timestamp - startTimestamp;
-                const progress = Math.min(elapsed / duration, 1);
-                
-                // Quartic deceleration curve: 1 - (1 - progress)^4
-                const eased = 1 - Math.pow(1 - progress, 4);
-                const current = Math.round(value * eased);
-                
-                setDisplayValue(current.toLocaleString() + suffix);
-
-                if (progress < 1) {
-                  requestAnimationFrame(step);
-                } else {
-                  setDisplayValue(value.toLocaleString() + suffix);
-                }
-              };
-
-              requestAnimationFrame(step);
-            };
-
-            if (delay > 0) {
-              const timer = setTimeout(startAnimation, delay);
-              return () => clearTimeout(timer);
-            } else {
-              startAnimation();
-            }
-
+          if (entry.isIntersecting) {
+            startAnimation();
             observer.unobserve(entry.target);
           }
         });
@@ -82,6 +85,10 @@ export const StatCounter: React.FC<StatCounterProps> = ({
 
     return () => {
       observer.disconnect();
+      if (timerRef.current) clearTimeout(timerRef.current);
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      // Reset so StrictMode double-invoke works correctly
+      animatedRef.current = false;
     };
   }, [value, suffix, delay, duration]);
 
