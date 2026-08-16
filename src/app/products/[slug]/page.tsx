@@ -8,9 +8,9 @@ import { ProductCard } from "@/components/products/ProductCard";
 import { Button } from "@/components/ui/Button";
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
@@ -22,7 +22,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: ProductPageProps): Promise<Metadata> {
-  const product = getProductBySlug(params.slug);
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
   if (!product) {
     return {
       title: "Product Not Found",
@@ -39,8 +40,9 @@ export async function generateMetadata({
   };
 }
 
-export default function ProductDetailPage({ params }: ProductPageProps) {
-  const product = getProductBySlug(params.slug);
+export default async function ProductDetailPage({ params }: ProductPageProps) {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
 
   if (!product) {
     notFound();
