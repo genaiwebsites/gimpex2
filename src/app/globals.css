@@ -1132,7 +1132,10 @@ p { margin: 0; }
 .pcard-fig {
   position: relative;
   aspect-ratio: 4/2.7;
-  background: linear-gradient(160deg, #F2F5EE 0%, #E7EDE2 100%);
+  background: 
+    radial-gradient(circle, rgba(14, 33, 26, 0.06) 1px, transparent 1px),
+    linear-gradient(160deg, #F2F5EE 0%, #E7EDE2 100%);
+  background-size: 16px 16px, 100% 100%;
   display: grid;
   place-items: center;
   padding: 14px;
@@ -1769,6 +1772,14 @@ p { margin: 0; }
   background: var(--white);
   border-radius: var(--r-m);
   padding: 24px;
+  border: 1px solid var(--line);
+  transition: transform 0.25s var(--ease-spring), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tlc:hover {
+  transform: translateY(-2px);
+  border-color: #C4CCBE;
+  box-shadow: var(--sh);
 }
 
 .tlc .yr {
@@ -1780,6 +1791,11 @@ p { margin: 0; }
   color: var(--ink);
   padding: 5px 12px;
   border-radius: 999px;
+  transition: transform 0.2s ease;
+}
+
+.tlc:hover .yr {
+  transform: scale(1.04);
 }
 
 .tlc h3 {
@@ -2057,13 +2073,17 @@ p { margin: 0; }
 }
 
 .pd-fig {
-  background: linear-gradient(160deg, #F2F5EE 0%, #E4EBDE 100%);
+  background: 
+    radial-gradient(circle, rgba(14, 33, 26, 0.08) 1px, transparent 1px),
+    linear-gradient(160deg, #F2F5EE 0%, #E4EBDE 100%);
+  background-size: 20px 20px, 100% 100%;
   border-radius: var(--r-x);
   aspect-ratio: 1/1;
   display: grid;
   place-items: center;
   position: relative;
   padding: 24px;
+  border: 1px solid rgba(14, 33, 26, 0.08);
 }
 
 .pd-fig svg.art {
