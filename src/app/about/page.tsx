@@ -69,7 +69,7 @@ export default function AboutPage() {
             alt="Tea estate hillside"
             fill
             priority
-            sizes="100vw"
+            sizes="(max-width: 1280px) 100vw, 1280px"
           />
           <div className="pbanner-in">
             <div className="container">

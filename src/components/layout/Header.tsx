@@ -25,8 +25,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const isHome = pathname === "/";
-  const forceSolid = isSolid || !isHome;
+  const hasDarkBanner =
+    pathname === "/" ||
+    pathname === "/about" ||
+    pathname === "/products" ||
+    pathname === "/clients" ||
+    pathname === "/gallery" ||
+    pathname === "/contact";
+
+  const forceSolid = isSolid || !hasDarkBanner;
 
   return (
     <header className={cn("hd", forceSolid && "solid", scrolled && "scrolled")}>

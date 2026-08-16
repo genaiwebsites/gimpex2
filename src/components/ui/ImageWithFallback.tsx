@@ -15,28 +15,32 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
   fallbackAlt,
   wrapperClassName,
   className,
+  fill,
   ...props
 }) => {
   const [error, setError] = useState(false);
 
+  if (error) {
+    return (
+      <div
+        className={cn(
+          "imgbox missing overflow-hidden",
+          fill ? "absolute inset-0 w-full h-full" : "relative w-full h-full",
+          wrapperClassName
+        )}
+        data-alt={(fallbackAlt || alt || "GIMPEX").toUpperCase()}
+      />
+    );
+  }
+
   return (
-    <div
-      className={cn(
-        "imgbox overflow-hidden relative",
-        error && "missing",
-        wrapperClassName
-      )}
-      data-alt={(fallbackAlt || alt || "GIMPEX").toUpperCase()}
-    >
-      {!error && (
-        <Image
-          src={src}
-          alt={alt}
-          className={cn("w-full h-full object-cover transition-opacity duration-300", className)}
-          onError={() => setError(true)}
-          {...props}
-        />
-      )}
-    </div>
+    <Image
+      src={src}
+      alt={alt}
+      fill={fill}
+      className={cn("w-full h-full object-cover", className)}
+      onError={() => setError(true)}
+      {...props}
+    />
   );
 };

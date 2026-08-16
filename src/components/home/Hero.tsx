@@ -13,7 +13,7 @@ export const Hero: React.FC = () => {
           alt="Tea cultivation terraces at sunrise"
           fill
           priority
-          sizes="100vw"
+          sizes="(max-width: 1280px) 100vw, 1280px"
         />
         <div className="hero-inner">
           <div className="container">

@@ -28,7 +28,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1531758854681-1a1462fd80a3?auto=format&fit=crop&w=1400&q=80",
+    src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80",
     alt: "Welding in the workshop",
     caption: "Fabrication · Kolkata",
   },
