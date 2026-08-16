@@ -10,11 +10,13 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="ft">
-      <div className="container">
-        <div className="ft-banner">
+      <div className="ft-in">
+        <div className="ft-top">
           <div>
-            <h3>Start your tea factory modernisation.</h3>
-            <p>Speak directly with our technical director in Kolkata.</p>
+            <span className="eyebrow plain">Let&apos;s build your line</span>
+            <h2>
+              Engineered in Kolkata. Running <em>everywhere tea is made.</em>
+            </h2>
           </div>
           <Button variant="lime" href="/contact">
             Request a quotation
@@ -27,10 +29,10 @@ export const Footer: React.FC = () => {
               <Image
                 src="/images/brand/gimpex-overseas-logo-white.png"
                 alt="Gimpex Overseas Private Limited — Tea Machinery Manufacturers"
-                width={170}
-                height={38}
+                width={160}
+                height={36}
                 className="brand-logo"
-                style={{ height: "36px", width: "auto" }}
+                style={{ height: "32px", width: "auto" }}
               />
             </Link>
             <p className="ft-about">
