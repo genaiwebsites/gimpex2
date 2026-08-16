@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { clients } from "@/data/clients";
 import { cn } from "@/lib/utils";
 
@@ -32,18 +31,49 @@ const clientTabs = [
   { key: "other",     label: "Other" },
 ];
 
-/** Builds a flagcdn.com URL for a given ISO 3166-1 alpha-2 code */
-function flagUrl(iso2: string, size: 20 | 24 | 32 | 40 | 48 | 64 = 24) {
-  return `https://flagcdn.com/w${size}/${iso2.toLowerCase()}.png`;
+/** Returns a high-res flagcdn.com PNG URL for the given ISO 3166-1 alpha-2 code */
+function flagUrl(iso2: string) {
+  // w40 gives a crisp 40px-wide PNG — enough for 2× retina at 20px display
+  return `https://flagcdn.com/w40/${iso2.toLowerCase()}.png`;
 }
+
+/* Plain <img> flag — avoids next/image wrapper div that breaks tiny layouts */
+// eslint-disable-next-line @next/next/no-img-element
+const Flag = ({
+  iso2,
+  label,
+  w = 24,
+  h = 18,
+  className = "cflag",
+  style,
+}: {
+  iso2: string;
+  label: string;
+  w?: number;
+  h?: number;
+  className?: string;
+  style?: React.CSSProperties;
+}) => (
+  // eslint-disable-next-line @next/next/no-img-element
+  <img
+    src={flagUrl(iso2)}
+    alt={label ? `${label} flag` : ""}
+    aria-hidden={!label}
+    className={className}
+    width={w}
+    height={h}
+    loading="lazy"
+    decoding="async"
+    style={style}
+  />
+);
 
 export const ClientDirectory: React.FC = () => {
   const [selectedCountry, setSelectedCountry] = useState("all");
 
-  const filteredClients = clients.filter((client) => {
-    if (selectedCountry === "all") return true;
-    return client.countryCode === selectedCountry;
-  });
+  const filteredClients = clients.filter((client) =>
+    selectedCountry === "all" ? true : client.countryCode === selectedCountry
+  );
 
   return (
     <div className="container">
@@ -57,53 +87,27 @@ export const ClientDirectory: React.FC = () => {
               className={cn("tab", selectedCountry === tab.key && "on")}
               onClick={() => setSelectedCountry(tab.key)}
             >
-              {iso && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={flagUrl(iso, 24)}
-                  alt={`${tab.label} flag`}
-                  className="tab-flag"
-                  width={18}
-                  height={13}
-                  loading="lazy"
-                />
-              )}
+              {iso && <Flag iso2={iso} label={tab.label} className="tab-flag" w={18} h={13} />}
               {tab.label}
             </button>
           );
         })}
       </div>
 
-      {/* Client rows with flag icons */}
+      {/* Client rows — flag · company name · country badge */}
       <div className="clist rv in">
         {filteredClients.map((client) => (
-          <div
-            key={client.id}
-            className="crow"
-            data-cats={client.countryCode}
-          >
-            {/* Flag column */}
-            <Image
-              src={flagUrl(client.iso2, 32)}
-              alt={`${client.country} flag`}
-              className="cflag"
-              width={24}
-              height={18}
-              unoptimized
-            />
+          <div key={client.id} className="crow" data-cats={client.countryCode}>
             {/* Company name */}
             <span className="cn">{client.name}</span>
-            {/* Country badge */}
+            {/* Right: mini flag + country name badge */}
             <span className="cc">
-              <Image
-                src={flagUrl(client.iso2, 24)}
-                alt=""
-                aria-hidden
-                className="cflag"
-                style={{ width: 14, height: 10, borderRadius: 2 }}
-                width={14}
-                height={10}
-                unoptimized
+              <Flag
+                iso2={client.iso2}
+                label=""
+                w={14}
+                h={10}
+                style={{ borderRadius: 2, height: 10 }}
               />
               {client.country}
             </span>
