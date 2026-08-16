@@ -109,19 +109,19 @@ export default function AboutPage() {
 
           <div className="statbar rv in" style={{ marginTop: "clamp(36px,4vw,52px)" }}>
             <div>
-              <b><StatCounter value={27} /></b>
+              <b><StatCounter value={27} delay={0} /></b>
               <span>Years of manufacturing</span>
             </div>
             <div>
-              <b><StatCounter value={17} /></b>
+              <b><StatCounter value={17} delay={100} /></b>
               <span>Product lines</span>
             </div>
             <div>
-              <b><StatCounter value={70} suffix="+" /></b>
+              <b><StatCounter value={70} suffix="+" delay={200} /></b>
               <span>Client companies</span>
             </div>
             <div>
-              <b><StatCounter value={20} suffix="+" /></b>
+              <b><StatCounter value={20} suffix="+" delay={300} /></b>
               <span>Countries served</span>
             </div>
           </div>
