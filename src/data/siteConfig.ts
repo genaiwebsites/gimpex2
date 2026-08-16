@@ -1,0 +1,39 @@
+export const siteConfig = {
+  name: "Gimpex Overseas",
+  tagline: "Tea machinery · Kolkata",
+  established: 1997,
+  description: "ISO 9001 tea machinery manufacturer since 1997. Complete CTC and orthodox processing lines exported to 20+ countries across four continents.",
+  cin: "U51909WB1999PTC089866",
+  certifications: ["ISO 9001", "Star Export House"],
+  address: {
+    street: "98 Karnani Estate, 209 A.J.C. Bose Road",
+    city: "Kolkata",
+    postalCode: "700017",
+    state: "West Bengal",
+    country: "India",
+  },
+  contact: {
+    phone: "+91 9903 221 141",
+    phoneRaw: "+919903221141",
+    email: "gimpexcalcutta@gmail.com",
+    hours: "Monday–Saturday, 08:00–17:30 IST",
+  },
+  stats: {
+    yearsOfManufacturing: 27,
+    machinesInstalled: "500+",
+    teaCompaniesServed: "70+",
+    countriesExportedTo: "20+",
+    productLines: 17,
+  },
+  socialLinks: {
+    linkedin: "https://linkedin.com",
+    email: "mailto:gimpexcalcutta@gmail.com",
+  },
+  navLinks: [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Products", href: "/products" },
+    { label: "Clients", href: "/clients" },
+    { label: "Gallery", href: "/gallery" },
+  ],
+};
