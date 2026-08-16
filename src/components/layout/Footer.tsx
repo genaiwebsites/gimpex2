@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/siteConfig";
 import { Button } from "@/components/ui/Button";
 import { Phone, Mail, MapPin, Linkedin } from "lucide-react";
@@ -9,13 +10,11 @@ export const Footer: React.FC = () => {
 
   return (
     <footer className="ft">
-      <div className="ft-in">
-        <div className="ft-top">
+      <div className="container">
+        <div className="ft-banner">
           <div>
-            <span className="eyebrow plain">Let&apos;s build your line</span>
-            <h2>
-              Engineered in Kolkata. Running <em>everywhere tea is made.</em>
-            </h2>
+            <h3>Start your tea factory modernisation.</h3>
+            <p>Speak directly with our technical director in Kolkata.</p>
           </div>
           <Button variant="lime" href="/contact">
             Request a quotation
@@ -24,17 +23,15 @@ export const Footer: React.FC = () => {
 
         <div className="ft-grid">
           <div>
-            <Link className="brand" href="/">
-              <span className="brand-mk">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 21c5.4-1.9 8-6.6 8-13C13.4 8 8.6 9.9 6.6 15.2 6.6 18 8.7 21 12 21z" />
-                  <path d="M12 21c0-5.6 2.6-9.4 8-12" />
-                </svg>
-              </span>
-              <span>
-                {siteConfig.name}
-                <small>Est. {siteConfig.established}</small>
-              </span>
+            <Link className="brand ft-brand" href="/" aria-label={`${siteConfig.fullName} - Home`}>
+              <Image
+                src="/images/brand/gimpex-overseas-logo-white.png"
+                alt="Gimpex Overseas Private Limited — Tea Machinery Manufacturers"
+                width={170}
+                height={38}
+                className="brand-logo"
+                style={{ height: "36px", width: "auto" }}
+              />
             </Link>
             <p className="ft-about">
               ISO 9001-certified Star Export House manufacturing complete tea processing lines for estates across four continents.

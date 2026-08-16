@@ -8,9 +8,9 @@ export const JsonLd: React.FC = () => {
       {
         "@type": "Organization",
         "@id": "https://gimpexoverseas.com/#organization",
-        "name": siteConfig.name,
+        "name": siteConfig.fullName || siteConfig.name,
         "url": "https://gimpexoverseas.com",
-        "logo": "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=600&q=80",
+        "logo": "https://gimpexoverseas.com/images/brand/gimpex-overseas-logo-dark.png",
         "description": siteConfig.description,
         "foundingDate": "1997",
         "address": {

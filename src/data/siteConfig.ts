@@ -1,7 +1,13 @@
 export const siteConfig = {
   name: "Gimpex Overseas",
+  fullName: "Gimpex Overseas Private Limited",
   tagline: "Tea machinery · Kolkata",
   established: 1997,
+  logo: {
+    white: "/images/brand/gimpex-overseas-logo-white.png",
+    dark: "/images/brand/gimpex-overseas-logo-dark.png",
+    alt: "Gimpex Overseas Private Limited — Tea Processing Machinery Manufacturers",
+  },
   description: "ISO 9001 tea machinery manufacturer since 1997. Complete CTC and orthodox processing lines exported to 20+ countries across four continents.",
   cin: "U51909WB1999PTC089866",
   certifications: ["ISO 9001", "Star Export House"],

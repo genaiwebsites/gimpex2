@@ -6,6 +6,8 @@ import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/siteConfig";
 import { cn } from "@/lib/utils";
 
+import Image from "next/image";
+
 interface HeaderProps {
   onOpenMobileMenu: () => void;
   isSolid?: boolean;
@@ -38,17 +40,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
   return (
     <header className={cn("hd", forceSolid && "solid", scrolled && "scrolled")}>
       <div className="hd-in">
-        <Link className="brand" href="/">
-          <span className="brand-mk">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 21c5.4-1.9 8-6.6 8-13C13.4 8 8.6 9.9 6.6 15.2 6.6 18 8.7 21 12 21z" />
-              <path d="M12 21c0-5.6 2.6-9.4 8-12" />
-            </svg>
-          </span>
-          <span>
-            {siteConfig.name}
-            <small>{siteConfig.tagline}</small>
-          </span>
+        <Link className="brand" href="/" aria-label={`${siteConfig.fullName} - Home`}>
+          <div className="brand-logo-wrap">
+            <Image
+              src="/images/brand/gimpex-overseas-logo-white.png"
+              alt="Gimpex Overseas Private Limited — Tea Machinery Manufacturers"
+              width={160}
+              height={36}
+              priority
+              className="brand-logo brand-logo-white"
+            />
+            <Image
+              src="/images/brand/gimpex-overseas-logo-dark.png"
+              alt="Gimpex Overseas Private Limited — Tea Machinery Manufacturers"
+              width={160}
+              height={36}
+              priority
+              className="brand-logo brand-logo-dark"
+            />
+          </div>
         </Link>
 
         <nav className="nav" aria-label="Primary">

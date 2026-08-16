@@ -339,36 +339,53 @@ p { margin: 0; }
   display: flex;
   align-items: center;
   gap: 11px;
-  font-family: var(--font-sora), system-ui, sans-serif;
-  font-weight: 600;
-  font-size: 15.5px;
-  letter-spacing: -0.03em;
+  text-decoration: none;
 }
 
-.brand-mk {
-  width: 32px;
+.brand-logo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 38px;
+}
+
+.brand-logo {
   height: 32px;
-  flex: 0 0 32px;
-  border-radius: 9px;
-  display: grid;
-  place-items: center;
-  background: var(--lime);
-  color: var(--ink);
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
 }
 
-.brand-mk svg {
-  width: 18px;
-  height: 18px;
+@media (min-width: 768px) {
+  .brand-logo {
+    height: 36px;
+    max-width: 190px;
+  }
 }
 
-.brand small {
+/* Default (transparent/dark header): display white logo */
+.brand-logo-white {
   display: block;
-  font-family: var(--font-dm-sans), system-ui, sans-serif;
-  font-weight: 400;
-  font-size: 10.5px;
-  letter-spacing: .06em;
-  opacity: .68;
-  margin-top: -1px;
+}
+.brand-logo-dark {
+  display: none;
+}
+
+/* Scrolled or Solid Header (light background): display dark logo */
+.hd.solid .brand-logo-white,
+.hd.scrolled .brand-logo-white {
+  display: none;
+}
+
+.hd.solid .brand-logo-dark,
+.hd.scrolled .brand-logo-dark {
+  display: block;
+}
+
+.ft-brand .brand-logo {
+  height: 36px;
+  max-width: 195px;
 }
 
 .nav {
