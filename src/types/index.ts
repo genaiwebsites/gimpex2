@@ -36,6 +36,8 @@ export interface ClientCompany {
   name: string;
   country: string;
   countryCode: 'india' | 'kenya' | 'rwanda' | 'tanzania' | 'uganda' | 'srilanka' | 'vietnam' | 'indonesia' | 'china' | 'other';
+  /** ISO 3166-1 alpha-2 code used for flag-cdn.com flags */
+  iso2: string;
 }
 
 export interface Milestone {
