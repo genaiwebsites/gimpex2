@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/Button";
+import { CountrySelect } from "@/components/ui/CountrySelect";
 
 const machineryOptions = [
   "Complete CTC line",
@@ -121,12 +122,11 @@ export const ContactForm: React.FC = () => {
       <div className="frow">
         <div className="fld">
           <label htmlFor="f5">Country</label>
-          <input
+          <CountrySelect
             id="f5"
-            type="text"
-            placeholder="e.g. Kenya"
             value={formData.country}
-            onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+            onChange={(name) => setFormData({ ...formData, country: name })}
+            required
           />
         </div>
         <div className="fld">
