@@ -107,10 +107,10 @@ export const ExportRoutes: React.FC = () => {
                     gap: "8px",
                     fontSize: "12.5px",
                     color: "var(--lime)",
-                    background: "rgba(205,245,100,0.1)",
+                    background: "rgba(var(--accent-rgb), 0.12)",
                     padding: "4px 12px",
                     borderRadius: "6px",
-                    border: "1px solid rgba(205,245,100,0.25)",
+                    border: "1px solid rgba(var(--accent-rgb), 0.3)",
                     animation: "fadeup 0.25s ease-out",
                   }}
                 >
@@ -134,12 +134,12 @@ export const ExportRoutes: React.FC = () => {
               >
                 <defs>
                   <linearGradient id="arc-default" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#CDF564" stopOpacity="0.7" />
-                    <stop offset="100%" stopColor="#CDF564" stopOpacity="0.15" />
+                    <stop offset="0%" stopColor="var(--lime)" stopOpacity="0.7" />
+                    <stop offset="100%" stopColor="var(--lime)" stopOpacity="0.15" />
                   </linearGradient>
                   <linearGradient id="arc-active" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#CDF564" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#CDF564" stopOpacity="0.9" />
+                    <stop offset="0%" stopColor="var(--lime)" stopOpacity="1" />
+                    <stop offset="100%" stopColor="var(--lime)" stopOpacity="0.9" />
                   </linearGradient>
                   <marker
                     id="route-dot"
@@ -149,7 +149,7 @@ export const ExportRoutes: React.FC = () => {
                     markerWidth="4"
                     markerHeight="4"
                   >
-                    <circle cx="4" cy="4" r="3" fill="#CDF564" />
+                    <circle cx="4" cy="4" r="3" fill="var(--lime)" />
                   </marker>
                   <marker
                     id="route-dot-active"
@@ -159,7 +159,7 @@ export const ExportRoutes: React.FC = () => {
                     markerWidth="6"
                     markerHeight="6"
                   >
-                    <circle cx="5" cy="5" r="4.5" fill="#CDF564" />
+                    <circle cx="5" cy="5" r="4.5" fill="var(--lime)" />
                   </marker>
                 </defs>
 
@@ -256,7 +256,7 @@ export const ExportRoutes: React.FC = () => {
                             cy={region.destY}
                             r={12}
                             fill="none"
-                            stroke="#CDF564"
+                            stroke="var(--lime)"
                             strokeWidth={1.5}
                             opacity={0.6}
                           >
@@ -268,13 +268,13 @@ export const ExportRoutes: React.FC = () => {
                           cx={region.destX}
                           cy={region.destY}
                           r={isSelected ? 5.5 : 3.5}
-                          fill="#CDF564"
+                          fill="var(--lime)"
                         />
                         <text
                           x={region.destX + (region.destX > 300 ? 10 : 0)}
                           y={region.destX > 300 ? region.destY + 4 : region.destY + 18}
                           textAnchor={region.destX <= 300 ? "middle" : "start"}
-                          fill={isSelected ? "#CDF564" : "rgba(255,255,255,0.85)"}
+                          fill={isSelected ? "var(--lime)" : "rgba(255,255,255,0.85)"}
                           fontWeight={isSelected ? "600" : "500"}
                         >
                           {region.label}
@@ -299,7 +299,7 @@ export const ExportRoutes: React.FC = () => {
                     onMouseLeave={() => setActiveId(null)}
                     style={{
                       cursor: "pointer",
-                      background: isSelected ? "rgba(205,245,100,0.06)" : "transparent",
+                      background: isSelected ? "rgba(var(--accent-rgb), 0.08)" : "transparent",
                     }}
                   >
                     <div className="rn">
@@ -328,9 +328,9 @@ export const ExportRoutes: React.FC = () => {
                           key={m}
                           className="rm-tag"
                           style={{
-                            background: isSelected ? "rgba(205,245,100,0.18)" : "rgba(255,255,255,0.06)",
+                            background: isSelected ? "rgba(var(--accent-rgb), 0.2)" : "rgba(255,255,255,0.06)",
                             color: isSelected ? "#fff" : "rgba(255,255,255,0.65)",
-                            borderColor: isSelected ? "rgba(205,245,100,0.4)" : "transparent",
+                            borderColor: isSelected ? "rgba(var(--accent-rgb), 0.45)" : "transparent",
                           }}
                         >
                           {m}

@@ -166,7 +166,7 @@ export const ContactForm: React.FC = () => {
 
       {submitted && (
         <div className="ok-note show" role="status">
-          <CheckCircle2 size={20} strokeWidth={2} style={{ color: "var(--lime)", flexShrink: 0 }} />
+          <CheckCircle2 size={20} strokeWidth={2} style={{ color: "var(--ink)", flexShrink: 0 }} />
           <span>Thank you — the engineering desk will be in touch shortly.</span>
         </div>
       )}
