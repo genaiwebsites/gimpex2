@@ -20,10 +20,12 @@ const filterTabs: { key: ProductCategory; label: string }[] = [
 export const ProductCatalogue: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>("all");
 
-  const filteredProducts = products.filter((p) => {
-    if (selectedCategory === "all") return true;
-    return p.categories.includes(selectedCategory);
-  });
+  const displayedProducts = products
+    .filter((p) => {
+      if (selectedCategory === "all") return true;
+      return p.categories.includes(selectedCategory);
+    })
+    .slice(0, 6);
 
   return (
     <div className="container">
@@ -40,7 +42,7 @@ export const ProductCatalogue: React.FC = () => {
       </div>
 
       <div className="cards rvg in">
-        {filteredProducts.map((product) => (
+        {displayedProducts.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
