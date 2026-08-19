@@ -45,12 +45,14 @@ export default function AboutPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&w=1400&q=80"
-            alt="Tea estate hillside"
+            src="/images/about/about-hero-dark-misty-tea.jpg"
+            alt="Misty highland tea estate slopes and deep green plantations at twilight"
             fill
             priority
-            sizes="(max-width: 1280px) 100vw, 1280px"
+            unoptimized
+            sizes="(max-width: 1280px) 100vw, 1440px"
           />
+          <div className="pbanner-blur-layer" aria-hidden="true" />
           <div className="pbanner-in">
             <div className="container">
               <div className="crumb">
@@ -125,12 +127,14 @@ export default function AboutPage() {
             </div>
             <div className="split-fig imgbox rv in relative">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1563822249366-3efb23b8e0c9?auto=format&fit=crop&w=1600&q=80"
-                alt="Highland tea plantation"
+                src="/images/about/tea-plantation-sunburst-about.jpg"
+                alt="Sunburst radiating over rolling emerald green tea plantation mountain terraces"
                 fill
+                unoptimized
+                style={{ transform: "scale(1.10)", transformOrigin: "center" }}
                 sizes="(max-width: 980px) 100vw, 50vw"
               />
-              <span className="cap">Client estate · highlands</span>
+              <span className="cap">Leaf sorting &amp; withering · Client works</span>
             </div>
           </div>
 

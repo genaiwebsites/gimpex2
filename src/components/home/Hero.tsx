@@ -1,20 +1,66 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { StatBar } from "./StatBar";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 
 export const Hero: React.FC = () => {
+  const [offsetY, setOffsetY] = useState(0);
+  const heroCardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (heroCardRef.current) {
+            const rect = heroCardRef.current.getBoundingClientRect();
+            // Calculate parallax only when hero section is in view
+            if (rect.bottom > 0 && rect.top < window.innerHeight) {
+              const scrolled = Math.max(0, -rect.top);
+              setOffsetY(scrolled * 0.22);
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section className="hero">
-      <div className="hero-card imgbox rv in">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=2400&q=80"
-          alt="Tea cultivation terraces at sunrise"
-          fill
-          priority
-          sizes="(max-width: 1280px) 100vw, 1280px"
-        />
+      <div ref={heroCardRef} className="hero-card imgbox rv in">
+        {/* Parallax Layer */}
+        <div
+          className="hero-parallax-layer"
+          style={{
+            transform: `translate3d(0, ${offsetY}px, 0)`,
+          }}
+        >
+          {/* Ken Burns Animated Image Wrapper */}
+          <div className="hero-kenburns-wrap">
+            <ImageWithFallback
+              src="/images/hero/tea-plantation-hero.jpg"
+              alt="Lush tea cultivation terrace hills with workers harvesting fresh green tea leaves at sunrise"
+              fill
+              priority
+              unoptimized
+              className="hero-bg-img"
+              sizes="100vw"
+            />
+          </div>
+        </div>
+
+        {/* Top Navbar Blur & Gradual Diffusion Layer */}
+        <div className="hero-blur-layer" aria-hidden="true" />
+
         <div className="hero-inner">
           <div className="container">
             <div className="hero-grid">

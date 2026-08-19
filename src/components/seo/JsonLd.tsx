@@ -33,7 +33,7 @@ export const JsonLd: React.FC = () => {
         "@type": "LocalBusiness",
         "@id": "https://gimpexoverseas.com/#localbusiness",
         "name": siteConfig.name,
-        "image": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1100&q=80",
+        "image": "https://images.unsplash.com/photo-1764114441123-586d13fc6ece?auto=format&fit=crop&w=1200&q=85",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": siteConfig.address.street,

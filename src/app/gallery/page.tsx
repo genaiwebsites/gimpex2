@@ -16,12 +16,13 @@ export default function GalleryPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"
-            alt="Workshop fabrication in progress"
+            src="https://images.unsplash.com/photo-1764114441123-586d13fc6ece?auto=format&fit=crop&w=1600&q=85"
+            alt="Workshop fabrication and machining floor in progress"
             fill
             priority
             sizes="(max-width: 1280px) 100vw, 1280px"
           />
+          <div className="pbanner-blur-layer" aria-hidden="true" />
           <div className="pbanner-in">
             <div className="container">
               <div className="crumb">

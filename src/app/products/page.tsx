@@ -16,12 +16,14 @@ export default function ProductsPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1100&q=80"
-            alt="Tea factory processing floor"
+            src="/images/factory/tea-processing-machinery.jpg"
+            alt="Continuous industrial tea processing and drying machinery in factory"
             fill
             priority
-            sizes="(max-width: 1280px) 100vw, 1280px"
+            unoptimized
+            sizes="(max-width: 1280px) 100vw, 1440px"
           />
+          <div className="pbanner-blur-layer" aria-hidden="true" />
           <div className="pbanner-in">
             <div className="container">
               <div className="crumb">

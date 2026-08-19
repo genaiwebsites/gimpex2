@@ -9,12 +9,12 @@ export const WorkshopSection: React.FC = () => {
         <div className="split">
           <div className="split-fig imgbox rv in relative">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1100&q=80"
-              alt="Machining bay in the Kolkata works"
+              src="https://images.unsplash.com/photo-1764114440403-4dd539cb582a?auto=format&fit=crop&w=1400&q=85"
+              alt="Precision lathe machining and steel component fabrication in works"
               fill
               sizes="(max-width: 980px) 100vw, 50vw"
             />
-            <span className="cap">Machining bay · Kolkata</span>
+            <span className="cap">Machining bay · Works</span>
           </div>
 
           <div className="split-bd rv in">

@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=1200&h=630&q=85",
+        url: "https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1200&h=630&q=85",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} Tea Processing Machinery`,
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — Tea Processing Machinery`,
     description: siteConfig.description,
-    images: ["https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=1200&h=630&q=85"],
+    images: ["https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1200&h=630&q=85"],
   },
   robots: {
     index: true,

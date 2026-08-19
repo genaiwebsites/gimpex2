@@ -16,12 +16,13 @@ export default function ClientsPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1100&q=80"
-            alt="Finished tea in production"
+            src="https://images.unsplash.com/photo-1758390285674-f1d55b9d1312?auto=format&fit=crop&w=1600&q=85"
+            alt="Client tea plantation estates in lush green tea growing regions"
             fill
             priority
             sizes="(max-width: 1280px) 100vw, 1280px"
           />
+          <div className="pbanner-blur-layer" aria-hidden="true" />
           <div className="pbanner-in">
             <div className="container">
               <div className="crumb">

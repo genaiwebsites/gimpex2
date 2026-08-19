@@ -7,12 +7,13 @@ export const BentoGrid: React.FC = () => {
       <div className="bento rvg in">
         <div className="bcell photo imgbox relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1523920290228-4f321a939b4c?auto=format&fit=crop&w=1100&q=80"
-            alt="Plucking two leaves and a bud"
+            src="/images/home/harvest-round-tea-plantation.jpg"
+            alt="Tea plantation workers harvesting fresh tea leaves in misty mountain valley at sunrise"
             fill
+            unoptimized
             sizes="(max-width: 980px) 50vw, 25vw"
           />
-          <span className="cap">Client estate · Kericho</span>
+          <span className="cap">Harvest round · Assam</span>
         </div>
 
         <div className="bcell card">
@@ -30,12 +31,13 @@ export const BentoGrid: React.FC = () => {
 
         <div className="bcell photo imgbox relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80"
-            alt="Fabrication in the Kolkata workshop"
+            src="/images/factory/tea-processing-machinery.jpg"
+            alt="Continuous industrial tea processing and drying machinery in operation at factory"
             fill
+            unoptimized
             sizes="(max-width: 980px) 50vw, 25vw"
           />
-          <span className="cap">Fabrication bay · Kolkata</span>
+          <span className="cap">Machining bay · Works</span>
         </div>
 
         <div className="bcell card lime">
