@@ -35,7 +35,7 @@ export default function ProductsPage() {
                 Nineteen machines. <em>One complete line.</em>
               </h1>
               <p className="lede">
-                Every unit is drawn, machined and load-tested at our Kolkata works. Filter by processing stage, or browse the full catalogue.
+                Sourced from world-class manufacturing partners, factory-calibrated and commissioned on-site by our expert engineering team. Filter by processing stage or browse our complete inventory.
               </p>
             </div>
           </div>

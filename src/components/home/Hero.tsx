@@ -47,8 +47,8 @@ export const Hero: React.FC = () => {
           {/* Ken Burns Animated Image Wrapper */}
           <div className="hero-kenburns-wrap">
             <ImageWithFallback
-              src="/images/hero/tea-plantation-hero.jpg"
-              alt="Lush tea cultivation terrace hills with workers harvesting fresh green tea leaves at sunrise"
+              src="/images/hero/tea-machinery-plant-hero.jpg"
+              alt="High-capacity modern industrial tea processing plant floor with CTC machinery, sorting decks, and automated conveyors"
               fill
               priority
               unoptimized

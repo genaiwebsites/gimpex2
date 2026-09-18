@@ -7,13 +7,13 @@ export const BentoGrid: React.FC = () => {
       <div className="bento rvg in">
         <div className="bcell photo imgbox relative">
           <ImageWithFallback
-            src="/images/home/harvest-round-tea-plantation.jpg"
-            alt="Tea plantation workers harvesting fresh tea leaves in misty mountain valley at sunrise"
+            src="/images/factory/green-leaf-withering-line.jpg"
+            alt="Commercial tea leaf withering trough lines and ventilation ducting"
             fill
             unoptimized
             sizes="(max-width: 980px) 50vw, 25vw"
           />
-          <span className="cap">Harvest round · Assam</span>
+          <span className="cap">Withering line · Supplied plant</span>
         </div>
 
         <div className="bcell card">

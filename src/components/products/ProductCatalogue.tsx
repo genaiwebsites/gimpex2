@@ -24,8 +24,7 @@ export const ProductCatalogue: React.FC = () => {
     .filter((p) => {
       if (selectedCategory === "all") return true;
       return p.categories.includes(selectedCategory);
-    })
-    .slice(0, 6);
+    });
 
   return (
     <div className="container">

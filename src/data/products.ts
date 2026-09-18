@@ -14,6 +14,7 @@ export const products: Product[] = [
     longDescription: "Engineered for high-volume estates requiring strict moisture reduction from green leaf. Features heavy-duty galvanised or stainless steel mesh flooring, aerodynamic plenum chamber, and reversible high-efficiency axial fans.",
     dimensionText: "TROUGH + AXIAL FAN",
     schematicId: "wm-t",
+    image: "/images/products/withering-machine.jpg",
     specs: [
       { label: "Bed length", value: "60 – 120 ft modular" },
       { label: "Bed width", value: "6 ft / 8 ft standard" },
@@ -46,6 +47,7 @@ export const products: Product[] = [
     longDescription: "Cleans and regulates withered green leaf prior to the rotorvane or CTC banks. Eliminates sand, stones, and extraneous vegetation while detangling leaf clumps for a seamless continuous feed.",
     dimensionText: "GREEN LEAF SIFT",
     schematicId: "gls-v",
+    image: "/images/products/vibro-green-leaf-shifter.jpg",
     specs: [
       { label: "Deck size", value: "1.2 m × 2.4 m" },
       { label: "Throughput", value: "2,000 – 4,500 kg/hr" },
@@ -79,7 +81,7 @@ export const products: Product[] = [
     dimensionText: "1500 MM",
     schematicId: "rv-15",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1565071783073-59b7e3fc2ca5?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/rotorvane.jpg",
     specs: [
       { label: "Barrel diameter", value: "15\" / 20\" (two frames)" },
       { label: "Throughput", value: "1,500 – 3,000 kg/hr" },
@@ -113,7 +115,7 @@ export const products: Product[] = [
     dimensionText: "8–10 T/HR",
     schematicId: "ctc-3t",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1599008633840-052c7f756385?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/terman-ctc.jpg",
     specs: [
       { label: "Stages", value: "Triplex (3 cuts standard) / Duplex option" },
       { label: "Roller diameter", value: "8\" / 8.5\" / 9\" segments" },
@@ -147,7 +149,7 @@ export const products: Product[] = [
     dimensionText: "CONTINUOUS BED",
     schematicId: "cfm-90",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1741218354459-01ecf5e6e5fc?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/continuous-fermenting-machine.jpg",
     specs: [
       { label: "Bed width", value: "1.2 m / 1.5 m / 1.8 m" },
       { label: "Bed length", value: "12 m – 24 m modular" },
@@ -181,7 +183,7 @@ export const products: Product[] = [
     dimensionText: "2450 MHZ",
     schematicId: "mwd-24",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/microwave-dryer.jpg",
     specs: [
       { label: "Frequency", value: "2450 MHz ISM band" },
       { label: "RF Power", value: "24 kW – 96 kW modular" },
@@ -214,6 +216,7 @@ export const products: Product[] = [
     longDescription: "High-capacity continuous drying line utilizing low-frequency mechanical vibration and precision hot air fluidisation to dry tea gently while preserving the make, blackness, and bloom of the particle.",
     dimensionText: "FLUIDISED BED",
     schematicId: "vfbd-f",
+    image: "/images/products/vibro-fluidised-bed-dryer-vfbd.jpg",
     specs: [
       { label: "Drying area", value: "8 m² – 24 m²" },
       { label: "Throughput", value: "500 – 2,200 kg/hr made tea" },
@@ -247,7 +250,7 @@ export const products: Product[] = [
     dimensionText: "CCD OPTICS",
     schematicId: "srt-ccd",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1614961909897-e8c1a22c78a0?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/color-sorter.jpg",
     specs: [
       { label: "Channels / Chutes", value: "2 – 6 chute configurations" },
       { label: "Throughput", value: "600 – 3,000 kg/hr" },
@@ -280,6 +283,7 @@ export const products: Product[] = [
     longDescription: "Multi-deck grading machine that segregates made tea into distinct commercial size fractions with zero breakage of delicate tippy orthodox grades or CTC particles.",
     dimensionText: "6–8° DECK",
     schematicId: "vds-6",
+    image: "/images/products/vibro-deck-sorter.jpg",
     specs: [
       { label: "Decks", value: "3 – 5 sieve decks stacked" },
       { label: "Deck area", value: "1.2 m × 2.0 m per level" },
@@ -312,6 +316,7 @@ export const products: Product[] = [
     longDescription: "High-precision rotary and reciprocating sorting unit designed for clean grading of BOP, PF, PD, and dust grades with high purity cuts and uniform particle distribution.",
     dimensionText: "3-STAGE MESH",
     schematicId: "trn-3",
+    image: "/images/products/trinic-sorter-cum-fiber-extractor.jpg",
     specs: [
       { label: "Stages", value: "3 cascading screen levels" },
       { label: "Throughput", value: "750 – 1,800 kg/hr" },
@@ -344,6 +349,7 @@ export const products: Product[] = [
     longDescription: "Extracts hairy fibrous matter and fine brown stalk from black tea using electrostatically charged rollers, yielding exceptionally clean, bright, and high-value export-grade leaf.",
     dimensionText: "STATIC FIBRE OUT",
     schematicId: "fex-s",
+    image: "/images/products/tea-fibre-extractor.jpg",
     specs: [
       { label: "Rollers", value: "4 – 8 high-dielectric PVC/Ebonite rolls" },
       { label: "Throughput", value: "500 – 1,400 kg/hr" },
@@ -377,7 +383,7 @@ export const products: Product[] = [
     dimensionText: "120 BPM",
     schematicId: "tbm-120",
     highlighted: true,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85",
+    image: "/images/products/tea-bag-machine.jpg",
     specs: [
       { label: "Speed", value: "100 – 140 bags/minute" },
       { label: "Dosing range", value: "1.5 g – 3.5 g adjustable" },
@@ -410,6 +416,7 @@ export const products: Product[] = [
     longDescription: "Continuous bulk throughput monitoring station designed to measure tea flow between factory stages and verify bag/chest weights before dispatch with high-speed digital load cells.",
     dimensionText: "±0.5% ACC",
     schematicId: "ocw-5",
+    image: "/images/products/online-continuous-weigher.jpg",
     specs: [
       { label: "Belt speed", value: "0.2 – 1.0 m/s variable" },
       { label: "Weight capacity", value: "5 – 50 kg dynamic" },
@@ -442,6 +449,7 @@ export const products: Product[] = [
     longDescription: "High-efficiency aerodynamically profiled fans built for massive volumetric displacement at moderate static pressures, specifically designed for withering troughs and ventilation.",
     dimensionText: "AXIAL FLOW",
     schematicId: "aff-a",
+    image: "/images/products/axial-flow-fan.jpg",
     specs: [
       { label: "Impeller diameter", value: "30\" / 36\" / 42\" / 48\" / 54\"" },
       { label: "Air delivery", value: "15,000 – 55,000 CFM" },
@@ -474,6 +482,7 @@ export const products: Product[] = [
     longDescription: "Suspended monorail trolley transit system that moves green leaf, withered leaf, or bagged tea effortlessly between multi-story withering lofts and ground processing bays.",
     dimensionText: "OVERHEAD LINE",
     schematicId: "ohm-r",
+    image: "/images/products/overhead-monorail.jpg",
     specs: [
       { label: "Track profile", value: "Standard I-beam / enclosed tubular track" },
       { label: "Carrier payload", value: "150 – 500 kg per trolley carrier" },
@@ -506,6 +515,7 @@ export const products: Product[] = [
     longDescription: "Heavy-duty machine tool for resharpening milling cutters, chasers, and precision tooling used in the CTC roller maintenance shop.",
     dimensionText: "TOOL & CUTTER",
     schematicId: "tcg-u",
+    image: "/images/products/tool-and-cutter-grinder.jpg",
     specs: [
       { label: "Workhead swing", value: "250 mm diameter" },
       { label: "Distance between centers", value: "650 mm" },
@@ -538,6 +548,7 @@ export const products: Product[] = [
     longDescription: "Metrology testing fixture equipped with high-accuracy dial indicators to verify total indicated runout (TIR), journal concentricity, and tooth mesh depth on CTC rollers before installation.",
     dimensionText: "ROLLER TIR CHECK",
     schematicId: "rib-t",
+    image: "/images/products/roller-inspection-bench.jpg",
     specs: [
       { label: "Maximum roller length", value: "1,200 mm" },
       { label: "Maximum roller diameter", value: "300 mm" },
@@ -570,6 +581,7 @@ export const products: Product[] = [
     longDescription: "High-precision automated machine tool that re-cuts and sharpens circumferential grooves on CTC rollers without requiring manual indexing, dramatically reducing refurbishing labor.",
     dimensionText: "AUTO CHASING",
     schematicId: "acm-a",
+    image: "/images/products/auto-chasing-machine.jpg",
     specs: [
       { label: "Roller size handled", value: "8\" – 10\" diameter × up to 40\" length" },
       { label: "Pitch range", value: "8, 10, 12, 14 TPI standard (custom available)" },
@@ -602,6 +614,7 @@ export const products: Product[] = [
     longDescription: "CNC/Automated helical milling machine designed to mill longitudinal helical grooves on CTC roller blanks with perfect index accuracy prior to circumferential chasing.",
     dimensionText: "AUTO MILLING",
     schematicId: "amm-a",
+    image: "/images/products/auto-milling-machine.jpg",
     specs: [
       { label: "Roller size handled", value: "8\" – 10\" diameter × up to 40\" length" },
       { label: "Helix angle", value: "0° – 15° left or right hand helix" },

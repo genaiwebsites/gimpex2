@@ -6,7 +6,7 @@ import { products, getProductBySlug } from "@/data/products";
 import { SchematicRenderer } from "@/components/schematics/SchematicRenderer";
 import { ProductCard } from "@/components/products/ProductCard";
 import { Button } from "@/components/ui/Button";
-
+import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 import { CheckCircle2 } from "@/components/ui/Icons";
 
 interface ProductPageProps {
@@ -62,9 +62,34 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="pd">
             <div className="pd-fig rv in">
               <span className="tagl">
-                {product.code} · GENERAL ARRANGEMENT
+                {product.code} · MACHINERY SPECIFICATION
               </span>
-              <SchematicRenderer schematicId={product.schematicId} />
+              {product.image ? (
+                <div
+                  style={{
+                    position: "relative",
+                    width: "100%",
+                    height: "100%",
+                    minHeight: "340px",
+                    borderRadius: "calc(var(--r-x) - 4px)",
+                    overflow: "hidden",
+                  }}
+                >
+                  <ImageWithFallback
+                    src={product.image}
+                    alt={`${product.name} ${product.code} tea processing machinery`}
+                    fill
+                    priority
+                    sizes="(max-width: 980px) 100vw, 50vw"
+                    style={{
+                      objectFit: "cover",
+                      objectPosition: "center",
+                    }}
+                  />
+                </div>
+              ) : (
+                <SchematicRenderer schematicId={product.schematicId} />
+              )}
             </div>
 
             <div className="rv in">
