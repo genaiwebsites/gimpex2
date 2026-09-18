@@ -5,8 +5,6 @@ import { Header } from "@/components/layout/Header";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { Footer } from "@/components/layout/Footer";
 import { ScrollRevealProvider } from "@/components/ui/ScrollRevealProvider";
-import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
-
 export const LayoutShell: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -19,7 +17,6 @@ export const LayoutShell: React.FC<{ children: React.ReactNode }> = ({ children 
       />
       <main>{children}</main>
       <Footer />
-      <ThemeSwitcher />
     </ScrollRevealProvider>
   );
 };

@@ -90,15 +90,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-theme="blue"
       suppressHydrationWarning
       className={`${sora.variable} ${dmSans.variable} ${jetbrainsMono.variable}`}
     >
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("gimpex-theme-palette");if(t==="blue"||t==="green"){document.documentElement.setAttribute("data-theme",t);}else{document.documentElement.setAttribute("data-theme","green");}}catch(e){}})();`,
-          }}
-        />
         <JsonLd />
       </head>
       <body>
