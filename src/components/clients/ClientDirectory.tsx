@@ -31,10 +31,9 @@ const clientTabs = [
   { key: "other",     label: "Other" },
 ];
 
-/** Returns a high-res flagcdn.com PNG URL for the given ISO 3166-1 alpha-2 code */
+/** Returns local static PNG URL for the given ISO 3166-1 alpha-2 code */
 function flagUrl(iso2: string) {
-  // w40 gives a crisp 40px-wide PNG — enough for 2× retina at 20px display
-  return `https://flagcdn.com/w40/${iso2.toLowerCase()}.png`;
+  return `/images/flags/${iso2.toLowerCase()}.png`;
 }
 
 /* Plain <img> flag — avoids next/image wrapper div that breaks tiny layouts */

@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1200&h=630&q=85",
+        url: "/images/hero/tea-machinery-plant-hero.jpg",
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} Tea Processing Machinery`,
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — Tea Processing Machinery Suppliers`,
     description: siteConfig.description,
-    images: ["https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1200&h=630&q=85"],
+    images: ["/images/hero/tea-machinery-plant-hero.jpg"],
   },
   robots: {
     index: true,

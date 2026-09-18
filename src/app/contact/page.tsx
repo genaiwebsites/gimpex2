@@ -19,7 +19,7 @@ export default function ContactPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=85"
+            src="/images/banners/contact-banner.jpg"
             alt="Despatch warehouse and export packing"
             fill
             priority

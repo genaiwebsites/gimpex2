@@ -3,7 +3,7 @@ import { GalleryItem } from "@/types";
 export const galleryItems: GalleryItem[] = [
   {
     id: "g1",
-    src: "https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1600&q=85",
+    src: "/images/gallery/highland-tea-estate-sunrise.jpg",
     alt: "Highland tea plantation estate at sunrise",
     caption: "Client estate · Munnar highlands",
     wide: true,
@@ -16,7 +16,7 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g3",
-    src: "https://images.unsplash.com/photo-1562016600-ece13e8ba570?auto=format&fit=crop&w=1200&q=85",
+    src: "/images/gallery/tea-machinery-commissioning.jpg",
     alt: "Industrial tea processing machinery being commissioned at estate",
     caption: "Commissioning · Client estate",
   },
@@ -28,13 +28,13 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1599008633840-052c7f756385?auto=format&fit=crop&w=1400&q=85",
+    src: "/images/gallery/ctc-processing-line.jpg",
     alt: "Industrial tea CTC processing machinery in operation",
     caption: "CTC processing line · In operation",
   },
   {
     id: "g6",
-    src: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=85",
+    src: "/images/gallery/kolkata-port-export-containers.jpg",
     alt: "Maritime export containers at Kolkata port",
     caption: "Outbound · Kolkata port",
     wide: true,
@@ -53,25 +53,25 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g9",
-    src: "https://images.unsplash.com/photo-1565071783073-59b7e3fc2ca5?auto=format&fit=crop&w=1200&q=85",
+    src: "/images/gallery/processing-equipment-supplied.jpg",
     alt: "Industrial processing machinery in factory setting",
     caption: "Processing equipment · Supplied",
   },
   {
     id: "g10",
-    src: "https://images.unsplash.com/photo-1757439829355-d32a74ef3593?auto=format&fit=crop&w=1200&q=85",
+    src: "/images/gallery/tea-estate-kenya.jpg",
     alt: "Tea estate workers in lush rolling green plantation",
     caption: "Estate visit · Kenya",
   },
   {
     id: "g11",
-    src: "https://images.unsplash.com/photo-1758390286367-7f645bffb090?auto=format&fit=crop&w=1200&q=85",
+    src: "/images/gallery/tea-harvest-dispatch.jpg",
     alt: "Tea estate workers carrying leaf baskets in morning mist",
     caption: "Harvest dispatch",
   },
   {
     id: "g12",
-    src: "https://images.unsplash.com/photo-1757439829355-d32a74ef3593?auto=format&fit=crop&w=2400&q=85",
+    src: "/images/banners/tea-plantation-panoramic.jpg",
     alt: "Rolling green tea terraces under morning sky",
     caption: "First flush · Sunrise",
     wide: true,

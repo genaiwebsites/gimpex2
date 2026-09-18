@@ -17,7 +17,7 @@ interface CountrySelectProps {
 }
 
 function flagSrc(iso2: string) {
-  return `https://flagcdn.com/w40/${iso2.toLowerCase()}.png`;
+  return `/images/flags/${iso2.toLowerCase()}.png`;
 }
 
 export const CountrySelect: React.FC<CountrySelectProps> = ({

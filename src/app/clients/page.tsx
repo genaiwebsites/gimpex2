@@ -16,7 +16,7 @@ export default function ClientsPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1758390285674-f1d55b9d1312?auto=format&fit=crop&w=1600&q=85"
+            src="/images/banners/clients-banner.jpg"
             alt="Client tea plantation estates in lush green tea growing regions"
             fill
             priority
