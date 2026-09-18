@@ -449,7 +449,6 @@ export const products: Product[] = [
     dimensionText: "5-STAGE COMBINED",
     schematicId: "trn-3",
     image: "/images/products/trinic-sorter-cum-fiber-extractor.jpg",
-    highlighted: true,
     specs: [
       { label: "Functionality", value: "Combined sorting, grading & fibre extraction" },
       { label: "Mesh trays", value: "5 different stainless steel meshes supplied" },

@@ -4,7 +4,7 @@ import { products } from "@/data/products";
 import { ProductCard } from "@/components/products/ProductCard";
 
 export const FeaturedMachines: React.FC = () => {
-  const featured = products.filter((p) => p.highlighted);
+  const featured = products.filter((p) => p.highlighted).slice(0, 6);
 
   return (
     <section className="sec" style={{ paddingTop: 0 }}>

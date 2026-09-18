@@ -61,20 +61,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         <div className="container">
           <div className="pd">
             <div className="pd-fig rv in">
-              <span className="tagl">
-                {product.code} · MACHINERY SPECIFICATION
-              </span>
               {product.image ? (
-                <div
-                  style={{
-                    position: "relative",
-                    width: "100%",
-                    height: "100%",
-                    minHeight: "340px",
-                    borderRadius: "calc(var(--r-x) - 4px)",
-                    overflow: "hidden",
-                  }}
-                >
+                <div className="pd-image-frame">
                   <ImageWithFallback
                     src={product.image}
                     alt={`${product.name} ${product.code} tea processing machinery`}
@@ -86,9 +74,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                       objectPosition: "center",
                     }}
                   />
+                  <div className="pd-image-badge">
+                    <span className="badge-code">{product.code}</span>
+                    <span className="badge-dot" />
+                    <span className="badge-label">Machinery Specification</span>
+                  </div>
                 </div>
               ) : (
-                <SchematicRenderer schematicId={product.schematicId} />
+                <>
+                  <span className="tagl">
+                    {product.code} · MACHINERY SPECIFICATION
+                  </span>
+                  <SchematicRenderer schematicId={product.schematicId} />
+                </>
               )}
             </div>
 

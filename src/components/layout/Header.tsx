@@ -49,6 +49,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
               height={36}
               priority
               className="brand-logo brand-logo-white"
+              style={{ height: "auto", width: "auto" }}
             />
             <Image
               src="/images/brand/gimpex-overseas-logo-dark.png"
@@ -57,6 +58,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
               height={36}
               priority
               className="brand-logo brand-logo-dark"
+              style={{ height: "auto", width: "auto" }}
             />
           </div>
         </Link>

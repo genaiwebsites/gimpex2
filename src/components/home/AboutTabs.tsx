@@ -85,15 +85,15 @@ export const AboutTabs: React.FC = () => {
   return (
     <section className="sec" style={{ paddingTop: 0 }}>
       <div className="container">
-        {/* Section Heading with subtle context */}
-        <div className="sec-hd" style={{ marginBottom: "28px" }}>
-          <div className="rv in">
+        {/* Section Heading with responsive pill tab bar */}
+        <div className="about-tabs-head">
+          <div className="about-tabs-title-box rv in">
             <span className="eyebrow">Enterprise Overview</span>
             <h2>
               The trusted link between <em>world-class machinery</em> and high-yield tea estates.
             </h2>
           </div>
-          <div className="rv in">
+          <div className="about-tabs-nav-box rv in">
             {/* Pill Navigation Bar */}
             <div className="about-tab-nav" role="tablist">
               {tabs.map((tab) => (
