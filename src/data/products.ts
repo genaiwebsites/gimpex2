@@ -62,7 +62,7 @@ export const products: Product[] = [
       "Traps heavy foreign contaminants before they can damage precision CTC rollers",
       "Provides uniform de-clumped feed directly onto intake conveyors",
       "Rubber isolation mounts prevent vibration transfer into factory floors",
-      "Manufactured in food-grade stainless steel contact options",
+      "Available in food-grade stainless steel contact options",
     ],
   },
   {
@@ -79,6 +79,7 @@ export const products: Product[] = [
     dimensionText: "1500 MM",
     schematicId: "rv-15",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1565071783073-59b7e3fc2ca5?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Barrel diameter", value: "15\" / 20\" (two frames)" },
       { label: "Throughput", value: "1,500 – 3,000 kg/hr" },
@@ -112,6 +113,7 @@ export const products: Product[] = [
     dimensionText: "8–10 T/HR",
     schematicId: "ctc-3t",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1599008633840-052c7f756385?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Stages", value: "Triplex (3 cuts standard) / Duplex option" },
       { label: "Roller diameter", value: "8\" / 8.5\" / 9\" segments" },
@@ -145,6 +147,7 @@ export const products: Product[] = [
     dimensionText: "CONTINUOUS BED",
     schematicId: "cfm-90",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1741218354459-01ecf5e6e5fc?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Bed width", value: "1.2 m / 1.5 m / 1.8 m" },
       { label: "Bed length", value: "12 m – 24 m modular" },
@@ -178,6 +181,7 @@ export const products: Product[] = [
     dimensionText: "2450 MHZ",
     schematicId: "mwd-24",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Frequency", value: "2450 MHz ISM band" },
       { label: "RF Power", value: "24 kW – 96 kW modular" },
@@ -243,6 +247,7 @@ export const products: Product[] = [
     dimensionText: "CCD OPTICS",
     schematicId: "srt-ccd",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1614961909897-e8c1a22c78a0?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Channels / Chutes", value: "2 – 6 chute configurations" },
       { label: "Throughput", value: "600 – 3,000 kg/hr" },
@@ -372,6 +377,7 @@ export const products: Product[] = [
     dimensionText: "120 BPM",
     schematicId: "tbm-120",
     highlighted: true,
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=85",
     specs: [
       { label: "Speed", value: "100 – 140 bags/minute" },
       { label: "Dosing range", value: "1.5 g – 3.5 g adjustable" },

@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
-import { Gauge, ShieldCheck, Wrench } from "@/components/ui/Icons";
+import { CheckCircle2, Truck, Handshake } from "@/components/ui/Icons";
 
 export const WorkshopSection: React.FC = () => {
   return (
@@ -9,54 +9,56 @@ export const WorkshopSection: React.FC = () => {
         <div className="split">
           <div className="split-fig imgbox rv in relative">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1764114440403-4dd539cb582a?auto=format&fit=crop&w=1400&q=85"
-              alt="Precision lathe machining and steel component fabrication in works"
+              src="https://images.unsplash.com/photo-1562016600-ece13e8ba570?auto=format&fit=crop&w=1400&q=85"
+              alt="Tea processing machinery being commissioned at an estate — industrial equipment installation"
               fill
               sizes="(max-width: 980px) 100vw, 50vw"
             />
-            <span className="cap">Machining bay · Works</span>
+            <span className="cap">Commissioning · Client estate</span>
           </div>
 
           <div className="split-bd rv in">
-            <span className="eyebrow">The workshop</span>
+            <span className="eyebrow">How we supply</span>
             <h2 style={{ marginTop: "16px" }}>
-              One floor. Every machine{" "}
+              Sourced from the best.{" "}
               <em style={{ fontStyle: "normal", color: "var(--grey)" }}>
-                starts here.
+                Delivered to your door.
               </em>
             </h2>
             <p className="lede" style={{ marginTop: "18px" }}>
-              Fabrication, machining, assembly and test-running all happen under one roof in Kolkata — which is why our lead times hold and our tolerances don&apos;t drift.
+              Gimpex Overseas works with trusted global manufacturers to bring you
+              proven, high-performance tea processing machinery — sized to your needs,
+              factory-tested, and commissioned at your estate by our own team.
             </p>
 
             <div className="fcards">
               <div className="fcard">
                 <span className="ic">
-                  <Gauge size={22} strokeWidth={1.7} />
+                  <CheckCircle2 size={22} strokeWidth={1.7} />
                 </span>
                 <div>
-                  <h4>Built to your leaf, not a brochure</h4>
-                  <p>Throughput, altitude and moisture data from your estate set the final specification before steel is cut.</p>
+                  <h4>Sourced from proven global manufacturers</h4>
+                  <p>Every machine we supply comes from trusted manufacturers with established track records in tea processing — no compromises on quality or reliability.</p>
                 </div>
               </div>
 
               <div className="fcard">
                 <span className="ic">
-                  <ShieldCheck size={22} strokeWidth={1.7} />
+                  <Truck size={22} strokeWidth={1.7} />
                 </span>
                 <div>
-                  <h4>Load-tested before despatch</h4>
-                  <p>Every unit runs under load on our floor. What ships is what was proven — witnessed by the client on request.</p>
+                  <h4>Factory-tested before despatch</h4>
+                  <p>Each unit is tested at the manufacturer&apos;s facility before it ships. What arrives at your estate is a proven machine, not an untested one.</p>
                 </div>
               </div>
 
               <div className="fcard">
                 <span className="ic">
-                  <Wrench size={22} strokeWidth={1.7} />
+                  <Handshake size={22} strokeWidth={1.7} />
                 </span>
                 <div>
-                  <h4>Commissioned on site, spares for life</h4>
-                  <p>Our engineers install and hand over in your factory, and pattern-matched spares stay available for every machine we&apos;ve sold.</p>
+                  <h4>Commissioned on-site, spares for life</h4>
+                  <p>Our team installs and hands over at your factory, trains your operators, and keeps pattern-matched spares available for every machine we have ever supplied.</p>
                 </div>
               </div>
             </div>

@@ -16,8 +16,8 @@ export default function GalleryPage() {
       <section className="pbanner">
         <div className="pbanner-card imgbox rv in relative">
           <ImageWithFallback
-            src="https://images.unsplash.com/photo-1764114441123-586d13fc6ece?auto=format&fit=crop&w=1600&q=85"
-            alt="Workshop fabrication and machining floor in progress"
+            src="https://images.unsplash.com/photo-1736950825214-1b5e2bdbb5f8?auto=format&fit=crop&w=1600&q=85"
+            alt="Highland tea plantation estate with lush green rows at sunrise"
             fill
             priority
             sizes="(max-width: 1280px) 100vw, 1280px"

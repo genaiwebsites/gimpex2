@@ -16,13 +16,13 @@ const qualityCards = [
   {
     code: "Q—01",
     title: "Specific, never generic",
-    desc: "Machinery built to each customer's process — never a one-size build off the shelf.",
+    desc: "Machinery sourced and commissioned to each customer's exact process — never a one-size solution off the shelf.",
     icon: <SlidersHorizontal size={22} strokeWidth={1.6} />,
   },
   {
     code: "Q—02",
     title: "Documented at every stage",
-    desc: "Material, machining, assembly and load test are each inspected and recorded.",
+    desc: "Sourcing, factory testing, delivery and installation are each inspected and formally recorded.",
     icon: <ClipboardCheck size={22} strokeWidth={1.6} />,
   },
   {
@@ -77,14 +77,14 @@ export default function AboutPage() {
             <span className="eyebrow">Our story</span>
             <div>
               <p className="big">
-                Gimpex began where serious machine-building usually begins: a small floor, a few lathes, and customers who{" "}
+                Gimpex began where trust in machinery usually begins: a solid relationship with the right manufacturers, and customers who{" "}
                 <em>could not afford a machine that failed mid-season.</em>
               </p>
               <p className="small">
-                The early work was for Assam and Dooars estates — rollers, troughs, repair jobs that had to hold through a full flush. The discipline that period demanded still runs the company: machine to drawing, test at load, ship nothing unproven.
+                The early work was for Assam and Dooars estates — sourcing and commissioning rollers, troughs and dryers that had to hold through a full flush. The discipline that period demanded still runs the company: source from proven manufacturers, test before despatch, commission nothing unproven.
               </p>
               <p className="small" style={{ marginTop: "14px" }}>
-                Export began with East Africa in the 2000s. Kenyan and Rwandan factories wanted CTC lines that could be maintained locally with simple tooling — a design philosophy we already practised. From there the order book widened to Sri Lanka, Vietnam, Indonesia, Yunnan and Papua New Guinea.
+                Export began with East Africa in the 2000s. Kenyan and Rwandan factories wanted CTC lines they could maintain locally with simple tooling — a philosophy we already championed when sourcing from our manufacturing partners. From there the order book widened to Sri Lanka, Vietnam, Indonesia, Yunnan and Papua New Guinea.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
           <div className="statbar rv in" style={{ marginTop: "clamp(36px,4vw,52px)" }}>
             <div>
               <b><StatCounter value={27} delay={0} /></b>
-              <span>Years of manufacturing</span>
+              <span>Years of experience</span>
             </div>
             <div>
               <b><StatCounter value={17} delay={100} /></b>
@@ -195,9 +195,9 @@ export default function AboutPage() {
 
           <div style={{ marginTop: "clamp(40px,5vw,64px)" }}>
             <CtaBanner
-              eyebrow="Visit the works"
-              title="The Kolkata factory is open to clients by appointment."
-              buttonText="Arrange a visit"
+              eyebrow="Visit our office"
+              title="Our Kolkata office is open to clients by appointment."
+              buttonText="Arrange a meeting"
               buttonHref="/contact"
             />
           </div>

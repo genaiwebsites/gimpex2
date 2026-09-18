@@ -11,14 +11,15 @@ export const FeaturedMachines: React.FC = () => {
       <div className="container">
         <div className="sec-hd">
           <div className="rv in">
-            <span className="eyebrow">Machinery</span>
+            <span className="eyebrow">Our Products</span>
             <h2>
-              Drawn, machined and <em>proven at load.</em>
+              Sourced from world-class manufacturers.{" "}
+              <em>Commissioned for your estate.</em>
             </h2>
           </div>
           <div className="rv in">
             <p className="lede" style={{ marginBottom: "18px" }}>
-              Six of our most-specified units. Each one is manufactured to order at the Kolkata works.
+              Six of our most-specified machines — supplied and commissioned to your processing line by our team.
             </p>
             <Link className="btn btn-line" href="/products">
               <span>View all 19 machines</span>

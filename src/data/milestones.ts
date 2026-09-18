@@ -3,13 +3,13 @@ import { Milestone } from "@/types";
 export const milestones: Milestone[] = [
   {
     year: "1997",
-    title: "Workshop founded in Kolkata",
-    description: "Fabrication and repair work for Assam and Dooars tea estates.",
+    title: "Business founded in Kolkata",
+    description: "Supplying and commissioning tea processing machinery to Assam and Dooars estates.",
   },
   {
     year: "1999",
     title: "Incorporated as Gimpex Overseas Pvt. Ltd.",
-    description: "Registered in West Bengal; first complete machines shipped under the Gimpex name.",
+    description: "Registered in West Bengal; first complete machine orders fulfilled and shipped under the Gimpex name.",
   },
   {
     year: "2004",
@@ -19,7 +19,7 @@ export const milestones: Milestone[] = [
   {
     year: "2009",
     title: "ISO 9001 certification",
-    description: "Quality management system certified, with documented inspection at every build stage.",
+    description: "Quality management system certified, with documented inspection at every sourcing, delivery and installation stage.",
   },
   {
     year: "2014",
@@ -28,17 +28,17 @@ export const milestones: Milestone[] = [
   },
   {
     year: "2019",
-    title: "Microwave drying line launched",
-    description: "Volumetric dryer developed in-house; first installations in Sri Lanka and Vietnam.",
+    title: "Microwave drying line added",
+    description: "Volumetric tea dryers added to our product range; first installations commissioned in Sri Lanka and Vietnam.",
   },
   {
     year: "2023",
-    title: "500th machine installed",
-    description: "Cumulative installations pass five hundred across four continents.",
+    title: "500th machine supplied",
+    description: "Cumulative machines supplied and commissioned pass five hundred across four continents.",
   },
   {
     year: "Today",
     title: "Seventeen product lines",
-    description: "A complete catalogue covering every stage of tea processing, supported worldwide.",
+    description: "A complete catalogue covering every stage of tea processing, sourced from world-class manufacturers and supported worldwide.",
   },
 ];

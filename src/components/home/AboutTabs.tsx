@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-type TabKey = "who" | "build" | "how" | "reach";
+type TabKey = "who" | "supply" | "how" | "reach";
 
 export const AboutTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabKey>("who");
 
   const tabs: { key: TabKey; label: string }[] = [
     { key: "who", label: "Who we are" },
-    { key: "build", label: "What we build" },
+    { key: "supply", label: "What we supply" },
     { key: "how", label: "How we work" },
     { key: "reach", label: "Where we reach" },
   ];
@@ -38,11 +38,13 @@ export const AboutTabs: React.FC = () => {
                 <span className="eyebrow">About Gimpex</span>
                 <div>
                   <p className="big">
-                    Twenty-seven years building machinery for one of the oldest industries on earth —{" "}
+                    Twenty-seven years supplying machinery for one of the oldest industries on earth —{" "}
                     <em>and standing behind every installation.</em>
                   </p>
                   <p className="small">
-                    What began as a Kolkata workshop in 1997 now supplies complete processing lines to estates in Kenya, Rwanda, Sri Lanka, Vietnam, Indonesia and beyond. ISO 9001 certified, recognised by the Government of India as a Star Export House.
+                    Gimpex Overseas is a Kolkata-based authorised supplier and dealer of complete tea processing machinery.
+                    Established in 1997, ISO 9001 certified, and recognised by the Government of India as a Star Export House —
+                    we source equipment from trusted global manufacturers and commission it to tea estates across Kenya, Rwanda, Sri Lanka, Vietnam, Indonesia and beyond.
                   </p>
                   <Link className="tlink" href="/about">
                     More about us{" "}
@@ -57,7 +59,7 @@ export const AboutTabs: React.FC = () => {
             </div>
           )}
 
-          {activeTab === "build" && (
+          {activeTab === "supply" && (
             <div className="on">
               <div className="statement">
                 <span className="eyebrow">The catalogue</span>
@@ -67,7 +69,9 @@ export const AboutTabs: React.FC = () => {
                     <em>every stage from withering trough to tea bag.</em>
                   </p>
                   <p className="small">
-                    Rotorvanes, Terman CTC units, continuous fermenting machines, microwave and vibro fluid-bed dryers, colour sorters, fibre extractors, tea bag machines, continuous weighers — plus the toolroom equipment that keeps them serviced.
+                    We supply rotorvanes, Terman CTC units, continuous fermenting machines, microwave and vibro fluid-bed dryers,
+                    colour sorters, fibre extractors, tea bag machines, continuous weighers — plus ancillary toolroom equipment.
+                    Every machine is sourced from proven manufacturers and supplied with full technical documentation, spares and after-sales support.
                   </p>
                   <Link className="tlink" href="/products">
                     See all machinery{" "}
@@ -88,11 +92,13 @@ export const AboutTabs: React.FC = () => {
                 <span className="eyebrow">Our method</span>
                 <div>
                   <p className="big">
-                    Sized to your leaf data, load-tested before despatch,{" "}
-                    <em>commissioned by our own engineers.</em>
+                    Sized to your leaf data, factory-tested before despatch,{" "}
+                    <em>commissioned by our own team.</em>
                   </p>
                   <p className="small">
-                    We start from your throughput, moisture and altitude figures rather than a catalogue spec. Every unit runs at load on our floor — clients are welcome to witness it — and our team installs and hands over on site.
+                    We start from your throughput, moisture and altitude figures and source the right machine for your exact needs.
+                    Each unit is factory-tested before despatch — our team then installs and hands over at your estate,
+                    with training for your operators and pattern-matched spares available for life.
                   </p>
                   <Link className="tlink" href="/contact">
                     Start a project{" "}
@@ -114,10 +120,11 @@ export const AboutTabs: React.FC = () => {
                 <div>
                   <p className="big">
                     Seventy tea companies across twenty countries{" "}
-                    <em>run Gimpex equipment today.</em>
+                    <em>run Gimpex-supplied equipment today.</em>
                   </p>
                   <p className="small">
-                    From KTDA in Kenya and Rwanda Mountain Tea to Tata Tea in Assam, Finlay in Vietnam and PT. Melania in Indonesia — with spares and service support shipped worldwide.
+                    From KTDA in Kenya and Rwanda Mountain Tea to Tata Tea in Assam, Finlay in Vietnam and PT. Melania in Indonesia —
+                    with spares, consumables and service support shipped worldwide from Kolkata.
                   </p>
                   <Link className="tlink" href="/clients">
                     View our clients{" "}

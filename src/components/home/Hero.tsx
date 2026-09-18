@@ -66,25 +66,26 @@ export const Hero: React.FC = () => {
             <div className="hero-grid">
               <div>
                 <h1>
-                  Machinery that turns <em>green leaf</em> into finished tea.
+                  Quality tea machinery —{" "}
+                  <em>sourced, supplied and commissioned.</em>
                 </h1>
                 <p className="hero-sub">
-                  We design, build and commission complete CTC and orthodox processing lines from our Kolkata works — installed and running in more than twenty countries.
+                  Gimpex Overseas is a Kolkata-based authorised supplier of complete CTC and orthodox tea processing machinery — trusted by estates in more than twenty countries.
                 </p>
                 <div className="hero-cta">
                   <Button variant="lime" href="/products">
-                    Explore machinery
+                    Explore our machines
                   </Button>
                   <Button variant="ghost" pad arrow={false} href="/contact">
-                    Talk to an engineer
+                    Talk to our team
                   </Button>
                 </div>
               </div>
 
               <aside className="hero-note">
-                <h4>Our commitment</h4>
+                <h4>Our promise</h4>
                 <p>
-                  Every machine is built to your estate&apos;s leaf, throughput and altitude — then load-tested on our floor before it ships. Commissioning, training and lifetime spares included.
+                  Every machine is sourced from proven global manufacturers, sized to your estate&apos;s leaf, throughput and altitude — then commissioned on-site by our own team. Lifetime spares and after-sales support included.
                 </p>
                 <Link className="tlink" href="/about">
                   How we work{" "}

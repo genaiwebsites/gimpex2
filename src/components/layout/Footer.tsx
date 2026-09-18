@@ -13,9 +13,9 @@ export const Footer: React.FC = () => {
       <div className="ft-in">
         <div className="ft-top">
           <div>
-            <span className="eyebrow plain">Let&apos;s build your line</span>
+            <span className="eyebrow plain">Source your machinery</span>
             <h2>
-              Engineered in Kolkata. Running <em>everywhere tea is made.</em>
+              Trusted in Kolkata. Running <em>everywhere tea is made.</em>
             </h2>
           </div>
           <Button variant="lime" href="/contact">
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             <Link className="brand ft-brand" href="/" aria-label={`${siteConfig.fullName} - Home`}>
               <Image
                 src="/images/brand/gimpex-overseas-logo-white.png"
-                alt="Gimpex Overseas Private Limited — Tea Machinery Manufacturers"
+                alt="Gimpex Overseas Private Limited — Tea Machinery Suppliers"
                 width={160}
                 height={36}
                 className="brand-logo"
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
               />
             </Link>
             <p className="ft-about">
-              ISO 9001-certified Star Export House manufacturing complete tea processing lines for estates across four continents.
+              ISO 9001-certified Star Export House supplying complete tea processing lines to estates across four continents.
             </p>
           </div>
 

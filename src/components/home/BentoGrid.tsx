@@ -23,21 +23,21 @@ export const BentoGrid: React.FC = () => {
             </svg>
           </span>
           <span className="num">27</span>
-          <h4>Years of tea engineering</h4>
+          <h4>Years in tea machinery supply</h4>
           <p>
-            Continuous manufacturing since 1997, with machines from our earliest years still in service and still supported.
+            Trading and commissioning tea processing machinery since 1997 — with machines we have supplied still in service and still supported.
           </p>
         </div>
 
         <div className="bcell photo imgbox relative">
           <ImageWithFallback
             src="/images/factory/tea-processing-machinery.jpg"
-            alt="Continuous industrial tea processing and drying machinery in operation at factory"
+            alt="Tea processing machinery in operation at factory — CTC and fermenting equipment"
             fill
             unoptimized
             sizes="(max-width: 980px) 50vw, 25vw"
           />
-          <span className="cap">Machining bay · Works</span>
+          <span className="cap">Processing line · Client estate</span>
         </div>
 
         <div className="bcell card lime">
@@ -49,7 +49,7 @@ export const BentoGrid: React.FC = () => {
           <span className="num">98%</span>
           <h4>On-time commissioning</h4>
           <p>
-            Lines handed over within the committed window, because fabrication, machining and testing all happen under one roof.
+            Machinery sourced from trusted manufacturers, factory-tested, and handed over to your estate on schedule — every time.
           </p>
         </div>
       </div>

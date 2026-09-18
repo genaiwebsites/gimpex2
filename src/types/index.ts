@@ -29,6 +29,8 @@ export interface Product {
   schematicId: string;
   dimensionText: string;
   highlighted?: boolean;
+  /** Real machine photo URL — Unsplash or local /public/images/products/ */
+  image?: string;
 }
 
 export interface ClientCompany {

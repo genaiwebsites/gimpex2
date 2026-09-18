@@ -16,9 +16,9 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g3",
-    src: "https://images.unsplash.com/photo-1764114441123-586d13fc6ece?auto=format&fit=crop&w=1200&q=85",
-    alt: "Heavy lathe machining bay in workshop",
-    caption: "Machining bay · Works",
+    src: "https://images.unsplash.com/photo-1562016600-ece13e8ba570?auto=format&fit=crop&w=1200&q=85",
+    alt: "Industrial tea processing machinery being commissioned at estate",
+    caption: "Commissioning · Client estate",
   },
   {
     id: "g4",
@@ -28,9 +28,9 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g5",
-    src: "https://images.unsplash.com/photo-1764114440403-4dd539cb582a?auto=format&fit=crop&w=1400&q=85",
-    alt: "Precision steel tooling and lathe cutting",
-    caption: "Component fabrication · Kolkata",
+    src: "https://images.unsplash.com/photo-1599008633840-052c7f756385?auto=format&fit=crop&w=1400&q=85",
+    alt: "Industrial tea CTC processing machinery in operation",
+    caption: "CTC processing line · In operation",
   },
   {
     id: "g6",
@@ -53,15 +53,15 @@ export const galleryItems: GalleryItem[] = [
   },
   {
     id: "g9",
-    src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=85",
-    alt: "Precision CNC machinery components",
-    caption: "Precision machining",
+    src: "https://images.unsplash.com/photo-1565071783073-59b7e3fc2ca5?auto=format&fit=crop&w=1200&q=85",
+    alt: "Industrial processing machinery in factory setting",
+    caption: "Processing equipment · Supplied",
   },
   {
     id: "g10",
-    src: "https://images.unsplash.com/photo-1569950044272-e04b4b26300a?auto=format&fit=crop&w=1200&q=85",
-    alt: "Welding and frame fabrication in workshop",
-    caption: "Chassis fabrication",
+    src: "https://images.unsplash.com/photo-1757439829355-d32a74ef3593?auto=format&fit=crop&w=1200&q=85",
+    alt: "Tea estate workers in lush rolling green plantation",
+    caption: "Estate visit · Kenya",
   },
   {
     id: "g11",

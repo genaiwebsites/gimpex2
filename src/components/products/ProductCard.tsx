@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { Product } from "@/types";
-import { SchematicRenderer } from "@/components/schematics/SchematicRenderer";
+import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 import { cn } from "@/lib/utils";
 
 interface ProductCardProps {
@@ -24,7 +24,66 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, className }) 
             <path d="M7 17L17 7M8 7h9v9" />
           </svg>
         </span>
-        <SchematicRenderer schematicId={product.schematicId} />
+
+        {product.image ? (
+          /* Real machine photo */
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              overflow: "hidden",
+              borderRadius: "inherit",
+            }}
+          >
+            <ImageWithFallback
+              src={product.image}
+              alt={`${product.name} — tea processing machinery`}
+              fill
+              sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw"
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                transition: "transform 0.5s ease",
+              }}
+              className="pcard-img"
+            />
+            {/* Subtle gradient overlay so code tag and arrow remain legible */}
+            <div
+              aria-hidden="true"
+              style={{
+                position: "absolute",
+                inset: 0,
+                background:
+                  "linear-gradient(180deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.04) 50%, rgba(0,0,0,0.18) 100%)",
+              }}
+            />
+          </div>
+        ) : (
+          /* Fallback: styled placeholder with product code */
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              background: "var(--ink)",
+              borderRadius: "inherit",
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "var(--font-jetbrains-mono), monospace",
+                fontSize: "clamp(11px, 1.5vw, 14px)",
+                letterSpacing: "0.12em",
+                color: "var(--grey)",
+                opacity: 0.5,
+              }}
+            >
+              {product.dimensionText}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="pcard-bd">

@@ -8,14 +8,14 @@ const stats = [
   {
     value: 27,
     suffix: "",
-    label: "Years of manufacturing",
+    label: "Years of experience",
     icon: <Calendar size={18} strokeWidth={1.7} />,
     delay: 0,
   },
   {
     value: 500,
     suffix: "+",
-    label: "Machines installed",
+    label: "Machines supplied",
     icon: <PackageCheck size={18} strokeWidth={1.7} />,
     delay: 100,
   },

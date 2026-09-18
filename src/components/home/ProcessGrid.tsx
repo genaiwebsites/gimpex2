@@ -61,7 +61,7 @@ export const ProcessGrid: React.FC = () => {
               </h2>
             </div>
             <p className="lede rv in">
-              We manufacture equipment for every one of them — supplied as single machines or as a fully integrated line.
+              We supply and commission equipment for every stage — as single machines or as a fully integrated line.
             </p>
           </div>
           <div className="pgrid6 rvg in">
