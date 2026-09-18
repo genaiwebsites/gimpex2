@@ -22,7 +22,7 @@ export const FeaturedMachines: React.FC = () => {
               Six of our most-specified machines — supplied and commissioned to your processing line by our team.
             </p>
             <Link className="btn btn-line" href="/products">
-              <span>View all 19 machines</span>
+              <span>View all 17 machines</span>
               <span className="circ">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h13M12 5l7 7-7 7" />

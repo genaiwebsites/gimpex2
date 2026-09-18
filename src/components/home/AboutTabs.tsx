@@ -34,12 +34,12 @@ const tabData: Record<TabKey, TabContent> = {
   },
   supply: {
     eyebrow: "Comprehensive Inventory",
-    badge: "19 Complete Machine Lines",
+    badge: "17 Complete Machine Lines",
     heading: "Complete CTC and orthodox machinery lines from withering trough to packaged chest.",
     leadText:
       "From Rotorvanes, Terman CTC rollers and continuous fermenters to microwave dryers, optical colour sorters, and automated tea bag machines. Every single unit is sourced from proven global manufacturers, supplied with full OEM documentation, and backed by lifetime replacement parts.",
-    highlightStat: { number: "19", label: "Full machinery lines available" },
-    ctaText: "Browse all 19 machines",
+    highlightStat: { number: "17", label: "Full machinery lines available" },
+    ctaText: "Browse all 17 machines",
     ctaHref: "/products",
     image: "/images/products/terman-ctc.jpg",
     imageAlt: "Terman CTC continuous tea processing cutting rollers",

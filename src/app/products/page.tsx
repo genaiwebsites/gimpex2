@@ -7,7 +7,7 @@ import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 
 export const metadata: Metadata = {
   title: "Products",
-  description: "Nineteen tea machinery lines: withering, maceration, fermentation, drying, sorting and packing.",
+  description: "Seventeen specialised tea machinery systems: withering, maceration, fermentation, drying, sorting, packing, and maintenance.",
 };
 
 export default function ProductsPage() {
@@ -32,7 +32,7 @@ export default function ProductsPage() {
                 <span>Products</span>
               </div>
               <h1>
-                Nineteen machines. <em>One complete line.</em>
+                Seventeen machines. <em>One complete line.</em>
               </h1>
               <p className="lede">
                 Sourced from world-class manufacturing partners, factory-calibrated and commissioned on-site by our expert engineering team. Filter by processing stage or browse our complete inventory.
