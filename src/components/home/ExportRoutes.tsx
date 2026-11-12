@@ -49,7 +49,7 @@ const regions: RegionData[] = [
   {
     id: "east-asia",
     name: "East Asia",
-    markets: ["China — Yunnan"],
+    markets: ["China (Yunnan)"],
     destX: 480,
     destY: 65,
     pathD: "M 152 170 Q 320 40 480 65",

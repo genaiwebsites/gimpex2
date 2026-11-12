@@ -1,14 +1,15 @@
 export const siteConfig = {
-  name: "Gimpex Overseas",
+  name: "Gimpex Overseas Pvt. Ltd.",
+  shortName: "Gimpex Overseas",
   fullName: "Gimpex Overseas Private Limited",
-  tagline: "Tea machinery suppliers · Kolkata",
+  tagline: "The Tea Machinery People · Tea Leaf to Tea · Kolkata",
   established: 1997,
   logo: {
     white: "/images/brand/gimpex-overseas-logo-white.png",
     dark: "/images/brand/gimpex-overseas-logo-dark.png",
-    alt: "Gimpex Overseas Private Limited — Tea Processing Machinery Suppliers",
+    alt: "Gimpex Overseas Pvt. Ltd. | Tea Processing Machinery Manufacturers & Suppliers",
   },
-  description: "ISO 9001 tea machinery supplier since 1997. Supplying complete CTC and orthodox processing lines to estates across 20+ countries and four continents.",
+  description: "ISO 9001 tea machinery manufacturer and authorised supplier since 1997. Manufacturing and supplying complete CTC, Green Tea, and Orthodox processing lines to estates across 20+ countries and four continents.",
   cin: "U51909WB1999PTC089866",
   certifications: ["ISO 9001", "Star Export House"],
   address: {
@@ -26,8 +27,9 @@ export const siteConfig = {
   },
   stats: {
     yearsOfExperience: 27,
+    projectsCompleted: "50+",
     machinesSupplied: "500+",
-    teaCompaniesServed: "70+",
+    teaCompaniesServed: "150+",
     countriesExportedTo: "20+",
     productLines: 17,
   },

@@ -10,7 +10,7 @@ import { MapPin, Phone, Mail, Clock } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Gimpex Overseas in Kolkata for tea machinery quotations, spares and engineering support.",
+  description: "Contact Gimpex Overseas Pvt. Ltd. in Kolkata for tea machinery manufacturing, quotations, spares and engineering support.",
 };
 
 export default function ContactPage() {
@@ -37,7 +37,7 @@ export default function ContactPage() {
                 Talk to the <em>engineering desk.</em>
               </h1>
               <p className="lede">
-                A complete new line, an upgrade, or a single spare — one enquiry reaches the person who can help.
+                A complete new line, an upgrade, or a single spare: one enquiry reaches the person who can help.
               </p>
             </div>
           </div>

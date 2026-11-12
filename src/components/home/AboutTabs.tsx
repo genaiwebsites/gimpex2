@@ -23,9 +23,9 @@ const tabData: Record<TabKey, TabContent> = {
   who: {
     eyebrow: "Established 1997 · Kolkata",
     badge: "Government of India Star Export House",
-    heading: "Twenty-seven years supplying heavy machinery for one of the oldest industries on earth.",
+    heading: "Twenty-seven years manufacturing and supplying heavy machinery for the global tea industry.",
     leadText:
-      "Gimpex Overseas is an authorised supplier, exporter and dealer of complete tea processing machinery. Certified under ISO 9001 and headquartered in Kolkata, we source top-tier processing units from trusted manufacturers worldwide and commission them to estates across Kenya, Rwanda, Sri Lanka, Vietnam, Indonesia and beyond.",
+      "Gimpex Overseas Pvt. Ltd. is a Kolkata-based manufacturer, authorised supplier and exporter of complete tea processing machinery. Certified under ISO 9001 and recognized as a Star Export House, we manufacture and precision-source processing lines for CTC, Green Tea, and Orthodox manufacture, commissioning them to estates across Kenya, Rwanda, Sri Lanka, Vietnam, Indonesia and beyond.",
     highlightStat: { number: "27+", label: "Years of global engineering support" },
     ctaText: "Explore our story & credentials",
     ctaHref: "/about",
@@ -33,11 +33,11 @@ const tabData: Record<TabKey, TabContent> = {
     imageAlt: "Gimpex engineering team inspecting and commissioning industrial tea processing machinery",
   },
   supply: {
-    eyebrow: "Comprehensive Inventory",
+    eyebrow: "Comprehensive Manufacturing & Inventory",
     badge: "17 Complete Machine Lines",
-    heading: "Complete CTC and orthodox machinery lines from withering trough to packaged chest.",
+    heading: "Complete CTC, Green Tea, and Orthodox machinery lines from withering trough to packaged chest.",
     leadText:
-      "From Rotorvanes, Terman CTC rollers and continuous fermenters to microwave dryers, optical colour sorters, and automated tea bag machines. Every single unit is sourced from proven global manufacturers, supplied with full OEM documentation, and backed by lifetime replacement parts.",
+      "From Rotorvanes, Terman CTC rollers and continuous fermenters to microwave dryers, optical colour sorters, and automated tea bag machines. Every single unit is manufactured or sourced from proven global engineering partners, supplied with full OEM documentation, and backed by lifetime replacement parts.",
     highlightStat: { number: "17", label: "Full machinery lines available" },
     ctaText: "Browse all 17 machines",
     ctaHref: "/products",
@@ -49,7 +49,7 @@ const tabData: Record<TabKey, TabContent> = {
     badge: "100% On-Site Commissioned",
     heading: "Sized to your harvest data, factory-tested, and commissioned by our own engineers.",
     leadText:
-      "We analyze your green leaf throughput, ambient humidity, and estate altitude to match the exact machine specifications. Every unit undergoes strict quality inspection before dispatch. Our dedicated installation engineers travel to your factory to commission the unit and train your local operators.",
+      "We analyze your green leaf throughput, ambient humidity, and estate altitude to match the exact machine specifications for CTC, Green Tea, or Orthodox processing. Every unit undergoes strict quality inspection before dispatch. Our dedicated installation engineers travel to your factory to commission the unit and train your local operators.",
     highlightStat: { number: "98%", label: "First-run commissioning success" },
     ctaText: "Get an equipment recommendation",
     ctaHref: "/contact",
@@ -59,10 +59,10 @@ const tabData: Record<TabKey, TabContent> = {
   reach: {
     eyebrow: "International Operations",
     badge: "20+ Producing Nations",
-    heading: "Seventy tea companies across twenty countries run Gimpex-supplied equipment today.",
+    heading: "Over 150 tea companies across twenty countries run Gimpex machinery today.",
     leadText:
-      "From KTDA in Kenya and Rwanda Mountain Tea in Central Africa to Tata Tea in Assam, Finlay in Vietnam, and PT. Melania in Indonesia. We maintain round-the-clock technical dispatch from our Kolkata headquarters to keep your factory running during peak flushing seasons.",
-    highlightStat: { number: "70+", label: "Major corporate estates served" },
+      "From KTDA in Kenya and Rwanda Mountain Tea in Central Africa to Tata Tea in Assam, Finlay in Vietnam, and PT. Melania in Indonesia. With over 50 completed turnkey projects, we maintain round-the-clock technical dispatch from our Kolkata headquarters to keep your factory running during peak flushing seasons.",
+    highlightStat: { number: "150+", label: "Tea companies served worldwide" },
     ctaText: "View our worldwide clientele",
     ctaHref: "/clients",
     image: "/images/hero/tea-machinery-plant-hero.jpg",
@@ -90,7 +90,7 @@ export const AboutTabs: React.FC = () => {
           <div className="about-tabs-title-box rv in">
             <span className="eyebrow">Enterprise Overview</span>
             <h2>
-              The trusted link between <em>world-class machinery</em> and high-yield tea estates.
+              Manufacturing & supplying <em>world-class tea machinery</em> for high-yield estates.
             </h2>
           </div>
           <div className="about-tabs-nav-box rv in">

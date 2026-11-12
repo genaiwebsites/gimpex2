@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
           <div className="brand-logo-wrap">
             <Image
               src="/images/brand/gimpex-overseas-logo-white.png"
-              alt="Gimpex Overseas Private Limited — Tea Machinery Suppliers"
+              alt="Gimpex Overseas Pvt. Ltd. | Tea Machinery Manufacturers & Suppliers"
               width={160}
               height={36}
               priority
@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenMobileMenu, isSolid = fals
             />
             <Image
               src="/images/brand/gimpex-overseas-logo-dark.png"
-              alt="Gimpex Overseas Private Limited — Tea Machinery Suppliers"
+              alt="Gimpex Overseas Pvt. Ltd. | Tea Machinery Manufacturers & Suppliers"
               width={160}
               height={36}
               priority

@@ -36,7 +36,7 @@ export async function generateMetadata({
     title: `${product.name} ${product.code}`,
     description: product.description,
     openGraph: {
-      title: `${product.name} ${product.code} — Gimpex Overseas`,
+      title: `${product.name} ${product.code} | Gimpex Overseas`,
       description: product.description,
     },
   };
@@ -98,7 +98,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
 
               <span className="eyebrow">
-                Stage — {product.stageName.toLowerCase()}
+                Stage: {product.stageName.toLowerCase()}
               </span>
 
               <h1 style={{ marginTop: "14px", fontSize: "clamp(32px, 4.2vw, 52px)" }}>

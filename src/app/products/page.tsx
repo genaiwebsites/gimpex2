@@ -50,7 +50,7 @@ export default function ProductsPage() {
         <div className="container">
           <CtaBanner
             eyebrow="Not sure which unit?"
-            title="Send us your throughput and leaf data — we'll size the line."
+            title="Send us your throughput and leaf data: we'll size the line."
             buttonText="Get a recommendation"
             buttonHref="/contact"
           />

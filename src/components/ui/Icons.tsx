@@ -1,5 +1,5 @@
 /**
- * Central icon registry — all Lucide icons used across Gimpex Overseas.
+ * Central icon registry - all Lucide icons used across Gimpex Overseas.
  * Import from here instead of lucide-react directly to keep naming consistent.
  */
 export {

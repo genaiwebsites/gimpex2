@@ -13,7 +13,7 @@ export const milestones: Milestone[] = [
   },
   {
     year: "2004",
-    title: "First export order — Kenya",
+    title: "First export order: Kenya",
     description: "CTC machinery commissioned in the Kericho belt. East Africa becomes our largest export market.",
   },
   {

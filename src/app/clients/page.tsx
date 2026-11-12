@@ -7,7 +7,7 @@ import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
 
 export const metadata: Metadata = {
   title: "Clients",
-  description: "Seventy tea companies across twenty countries run Gimpex machinery.",
+  description: "Over 150 tea companies across twenty countries run Gimpex machinery.",
 };
 
 export default function ClientsPage() {
@@ -31,10 +31,10 @@ export default function ClientsPage() {
                 <span>Clients</span>
               </div>
               <h1>
-                Seventy tea companies. <em>Twenty countries.</em>
+                150+ tea companies. <em>Twenty countries.</em>
               </h1>
               <p className="lede">
-                From KTDA in Kenya to Tata Tea in Assam — the estates and factories running Gimpex machinery today.
+                From KTDA in Kenya to Tata Tea in Assam: the estates and factories running Gimpex machinery today.
               </p>
             </div>
           </div>
@@ -49,7 +49,7 @@ export default function ClientsPage() {
         <div className="container">
           <CtaBanner
             eyebrow="Join the list"
-            title="A new estate, a new factory, a new line — same engineering desk."
+            title="A new estate, a new factory, a new line: same engineering desk."
             buttonText="Start a conversation"
             buttonHref="/contact"
           />

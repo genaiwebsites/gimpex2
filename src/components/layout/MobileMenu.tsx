@@ -49,10 +49,10 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       aria-hidden={!isOpen}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", marginBottom: "28px" }}>
-        <Link href="/" onClick={onClose} aria-label="Gimpex Overseas Home">
+        <Link href="/" onClick={onClose} aria-label="Gimpex Overseas Pvt. Ltd. Home">
           <Image
             src="/images/brand/gimpex-overseas-logo-white.png"
-            alt="Gimpex Overseas Private Limited"
+            alt="Gimpex Overseas Pvt. Ltd."
             width={140}
             height={32}
             style={{ height: "28px", width: "auto" }}

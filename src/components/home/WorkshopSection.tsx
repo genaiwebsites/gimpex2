@@ -19,16 +19,16 @@ export const WorkshopSection: React.FC = () => {
           </div>
 
           <div className="split-bd rv in">
-            <span className="eyebrow">How we supply</span>
+            <span className="eyebrow">Manufacturing & Engineering</span>
             <h2 style={{ marginTop: "16px" }}>
-              Sourced from the best.{" "}
+              Manufactured with precision.{" "}
               <em style={{ fontStyle: "normal", color: "var(--grey)" }}>
                 Delivered to your door.
               </em>
             </h2>
             <p className="lede" style={{ marginTop: "18px" }}>
-              Gimpex Overseas works with trusted global manufacturers to bring you
-              proven, high-performance tea processing machinery — sized to your needs,
+              Gimpex Overseas Pvt. Ltd. manufactures and collaborates with world-class engineering partners to bring you
+              proven, high-performance CTC, Green Tea, and Orthodox tea processing machinery, sized to your needs,
               factory-tested, and commissioned at your estate by our own team.
             </p>
 
@@ -38,8 +38,8 @@ export const WorkshopSection: React.FC = () => {
                   <CheckCircle2 size={22} strokeWidth={1.7} />
                 </span>
                 <div>
-                  <h4>Sourced from proven global manufacturers</h4>
-                  <p>Every machine we supply comes from trusted manufacturers with established track records in tea processing — no compromises on quality or reliability.</p>
+                  <h4>Manufactured & engineered to industrial standards</h4>
+                  <p>Every machine we manufacture and supply comes with rigorous engineering specifications and established track records in tea processing, with no compromises on quality or reliability.</p>
                 </div>
               </div>
 

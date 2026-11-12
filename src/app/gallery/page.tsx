@@ -34,7 +34,7 @@ export default function GalleryPage() {
                 The shop floor, <em>and the fields it feeds.</em>
               </h1>
               <p className="lede">
-                From our Kolkata workshop to client factories across Africa and Asia — leaf, steel, and the machinery in between.
+                From our Kolkata workshop to client factories across Africa and Asia: leaf, steel, and the machinery in between.
               </p>
             </div>
           </div>

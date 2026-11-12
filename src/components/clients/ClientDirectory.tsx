@@ -36,7 +36,7 @@ function flagUrl(iso2: string) {
   return `/images/flags/${iso2.toLowerCase()}.png`;
 }
 
-/* Plain <img> flag — avoids next/image wrapper div that breaks tiny layouts */
+/* Plain <img> flag - avoids next/image wrapper div that breaks tiny layouts */
 // eslint-disable-next-line @next/next/no-img-element
 const Flag = ({
   iso2,
@@ -93,7 +93,7 @@ export const ClientDirectory: React.FC = () => {
         })}
       </div>
 
-      {/* Client rows — flag · company name · country badge */}
+      {/* Client rows - flag · company name · country badge */}
       <div className="clist rv in">
         {filteredClients.map((client) => (
           <div key={client.id} className="crow" data-cats={client.countryCode}>

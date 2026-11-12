@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: "auto-chasing-machine",
     slug: "auto-chasing-machine",
-    code: "ACM—1",
+    code: "ACM-1",
     name: "Auto Chasing Machine",
     stageName: "Workshop & Maintenance",
     categories: ["anc"],
@@ -38,7 +38,7 @@ export const products: Product[] = [
   {
     id: "auto-milling-machine",
     slug: "auto-milling-machine",
-    code: "AMM—1",
+    code: "AMM-1",
     name: "Auto Milling Machine",
     stageName: "Workshop & Maintenance",
     categories: ["anc"],
@@ -71,7 +71,7 @@ export const products: Product[] = [
   {
     id: "axial-flow-fan",
     slug: "axial-flow-fan",
-    code: "AFF—A",
+    code: "AFF-A",
     name: "Axial Flow Fan",
     stageName: "Withering & Leaf Handling",
     categories: ["wither"],
@@ -104,7 +104,7 @@ export const products: Product[] = [
   {
     id: "color-sorter",
     slug: "color-sorter",
-    code: "CS—251T",
+    code: "CS-251T",
     name: "Color Sorter",
     stageName: "Sorting & Cleaning",
     categories: ["sort"],
@@ -138,7 +138,7 @@ export const products: Product[] = [
   {
     id: "continuous-fermenting-machine-cfm",
     slug: "continuous-fermenting-machine-cfm",
-    code: "CFM—90",
+    code: "CFM-90",
     name: "Continuous Fermenting Machine (CFM)",
     stageName: "Fermentation",
     categories: ["ferment"],
@@ -172,7 +172,7 @@ export const products: Product[] = [
   {
     id: "microwave-dryer-machine",
     slug: "microwave-dryer-machine",
-    code: "MDM—G50",
+    code: "MDM-G50",
     name: "Microwave Dryer Machine",
     stageName: "Drying",
     categories: ["dry"],
@@ -205,7 +205,7 @@ export const products: Product[] = [
   {
     id: "overhead-monorail",
     slug: "overhead-monorail",
-    code: "OHM—C",
+    code: "OHM-C",
     name: "Overhead Monorail",
     stageName: "Withering & Leaf Handling",
     categories: ["wither"],
@@ -238,7 +238,7 @@ export const products: Product[] = [
   {
     id: "roller-inspection-bench",
     slug: "roller-inspection-bench",
-    code: "RIB—1",
+    code: "RIB-1",
     name: "Roller Inspection Bench",
     stageName: "Workshop & Maintenance",
     categories: ["anc"],
@@ -271,14 +271,14 @@ export const products: Product[] = [
   {
     id: "rotovane",
     slug: "rotovane",
-    code: "RV—15",
+    code: "RV-15",
     name: "Rotovane",
     stageName: "Rolling & Maceration",
     categories: ["roll"],
     subtitle: "Continuous leaf conditioner",
     badge: "Forged SS parts",
     description: "Stainless steel continuous leaf conditioner with forged stainless rotating parts, available in 8\", 12\", 15\" & 18\" sizes.",
-    longDescription: "GIMPEX Rotovane features complete stainless steel construction for longer service life and strictly hygienic food-grade operation. All rotating components—including the main rotor shaft, vanes, and feed worm—are manufactured from forged stainless steel for maximum tensile endurance under heavy leaf pressures. Available with choice of high or low base mounting to suit factory layout, with Iris or Cone discharge arrangements, in 8\", 12\", 15\", and 18\" barrel diameters.",
+    longDescription: "GIMPEX Rotovane features complete stainless steel construction for longer service life and strictly hygienic food-grade operation. All rotating components, including the main rotor shaft, vanes, and feed worm, are manufactured from forged stainless steel for maximum tensile endurance under heavy leaf pressures. Available with choice of high or low base mounting to suit factory layout, with Iris or Cone discharge arrangements, in 8\", 12\", 15\", and 18\" barrel diameters.",
     dimensionText: "8\"–18\" BARREL",
     schematicId: "rv-15",
     image: "/images/products/rotorvane.jpg",
@@ -305,7 +305,7 @@ export const products: Product[] = [
   {
     id: "tea-bag-machine",
     slug: "tea-bag-machine",
-    code: "TBM—120",
+    code: "TBM-120",
     name: "Tea Bag Machine",
     stageName: "Packaging",
     categories: ["pack"],
@@ -338,7 +338,7 @@ export const products: Product[] = [
   {
     id: "tea-fibre-extractor",
     slug: "tea-fibre-extractor",
-    code: "TFE—456",
+    code: "TFE-456",
     name: "Tea Fibre Extractor",
     stageName: "Sorting & Cleaning",
     categories: ["sort"],
@@ -371,7 +371,7 @@ export const products: Product[] = [
   {
     id: "terman-ctc",
     slug: "terman-ctc",
-    code: "CTC—3T",
+    code: "CTC-3T",
     name: "Terman CTC",
     stageName: "Rolling & Maceration",
     categories: ["roll"],
@@ -405,7 +405,7 @@ export const products: Product[] = [
   {
     id: "tool-and-cutter-grinder",
     slug: "tool-and-cutter-grinder",
-    code: "TCG—1",
+    code: "TCG-1",
     name: "Tool and Cutter Grinder",
     stageName: "Workshop & Maintenance",
     categories: ["anc"],
@@ -438,7 +438,7 @@ export const products: Product[] = [
   {
     id: "trinic-sorter-cum-fiber-extractor",
     slug: "trinic-sorter-cum-fiber-extractor",
-    code: "TSC—5",
+    code: "TSC-5",
     name: "Trinic Sorter cum Fiber Extractor",
     stageName: "Sorting & Cleaning",
     categories: ["sort"],
@@ -471,7 +471,7 @@ export const products: Product[] = [
   {
     id: "vibro-deck-sorter",
     slug: "vibro-deck-sorter",
-    code: "VDS—6",
+    code: "VDS-6",
     name: "Vibro Deck Sorter",
     stageName: "Sorting & Cleaning",
     categories: ["sort"],
@@ -504,7 +504,7 @@ export const products: Product[] = [
   {
     id: "vibro-fluidised-bed-dryer-vfbd",
     slug: "vibro-fluidised-bed-dryer-vfbd",
-    code: "VFBD—F",
+    code: "VFBD-F",
     name: "Vibro Fluidised Bed Dryer (VFBD)",
     stageName: "Drying",
     categories: ["dry"],
@@ -538,7 +538,7 @@ export const products: Product[] = [
   {
     id: "vibro-green-leaf-shifter",
     slug: "vibro-green-leaf-shifter",
-    code: "VGLS—1",
+    code: "VGLS-1",
     name: "Vibro Green Leaf Shifter",
     stageName: "Withering & Leaf Handling",
     categories: ["wither"],

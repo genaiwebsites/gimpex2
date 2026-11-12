@@ -80,7 +80,7 @@ export const clients: ClientCompany[] = [
   { id: "cn-3",  name: "Changning Winlong Tea Co.",         country: "China",           countryCode: "china",     iso2: "cn" },
   { id: "cn-4",  name: "Yunnan Mingyuan Trading",           country: "China",           countryCode: "china",     iso2: "cn" },
 
-  // Other countries — each with their own accurate ISO-2 code
+  // Other countries - each with their own accurate ISO-2 code
   { id: "ot-1",  name: "Office Du Thé Du Burundi",          country: "Burundi",         countryCode: "other", iso2: "bi" },
   { id: "ot-2",  name: "Agricultural Rural Development",    country: "Zimbabwe",        countryCode: "other", iso2: "zw" },
   { id: "ot-3",  name: "Tanganda Tea",                      country: "Zimbabwe",        countryCode: "other", iso2: "zw" },

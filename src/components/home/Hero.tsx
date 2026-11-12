@@ -64,12 +64,24 @@ export const Hero: React.FC = () => {
           <div className="container">
             <div className="hero-grid">
               <div>
+                <span
+                  className="eyebrow hero-eyebrow"
+                  style={{
+                    color: "rgba(255, 255, 255, 0.92)",
+                    textShadow: "0 2px 10px rgba(0, 0, 0, 0.85)",
+                    marginBottom: "12px",
+                    display: "inline-flex",
+                    letterSpacing: "0.12em",
+                  }}
+                >
+                  The Tea Machinery People · Tea Leaf to Tea
+                </span>
                 <h1>
-                  Quality tea machinery —{" "}
-                  <em>sourced, supplied and commissioned.</em>
+                  Quality tea machinery:{" "}
+                  <em>manufactured, supplied and commissioned.</em>
                 </h1>
                 <p className="hero-sub">
-                  Gimpex Overseas is a Kolkata-based authorised supplier of complete CTC and orthodox tea processing machinery — trusted by estates in more than twenty countries.
+                  Gimpex Overseas Pvt. Ltd. is a Kolkata-based manufacturer and authorised supplier of complete CTC, Green Tea, and Orthodox tea processing machinery, trusted by estates in more than twenty countries.
                 </p>
                 <div className="hero-cta">
                   <Button variant="lime" href="/products">

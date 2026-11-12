@@ -17,7 +17,7 @@ const machineryOptions = [
   "Colour sorter",
   "Tea bag machine",
   "Spares & service",
-  "Other — to discuss",
+  "Other (to discuss)",
 ];
 
 export const ContactForm: React.FC = () => {
@@ -167,7 +167,7 @@ export const ContactForm: React.FC = () => {
       {submitted && (
         <div className="ok-note show" role="status">
           <CheckCircle2 size={20} strokeWidth={2} style={{ color: "var(--ink)", flexShrink: 0 }} />
-          <span>Thank you — the engineering desk will be in touch shortly.</span>
+          <span>Thank you. The engineering desk will be in touch shortly.</span>
         </div>
       )}
     </form>

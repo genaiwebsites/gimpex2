@@ -37,7 +37,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, className }) 
           >
             <ImageWithFallback
               src={product.image}
-              alt={`${product.name} — tea processing machinery`}
+              alt={`${product.name} | tea processing machinery`}
               fill
               sizes="(max-width: 680px) 100vw, (max-width: 980px) 50vw, 33vw"
               style={{

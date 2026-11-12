@@ -5,39 +5,11 @@ import { milestones } from "@/data/milestones";
 import { StatCounter } from "@/components/ui/StatCounter";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 import { ImageWithFallback } from "@/components/ui/ImageWithFallback";
-import { SlidersHorizontal, ClipboardCheck, TrendingUp, ShieldCheck } from "@/components/ui/Icons";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "From a Kolkata workshop in 1997 to an ISO 9001 Star Export House supplying tea machinery to twenty countries.",
+  description: "An enterprise that grew into a global manufacturer and supplier to all major tea producing countries worldwide.",
 };
-
-const qualityCards = [
-  {
-    code: "Q—01",
-    title: "Specific, never generic",
-    desc: "Machinery sourced and commissioned to each customer's exact process — never a one-size solution off the shelf.",
-    icon: <SlidersHorizontal size={22} strokeWidth={1.6} />,
-  },
-  {
-    code: "Q—02",
-    title: "Documented at every stage",
-    desc: "Sourcing, factory testing, delivery and installation are each inspected and formally recorded.",
-    icon: <ClipboardCheck size={22} strokeWidth={1.6} />,
-  },
-  {
-    code: "Q—03",
-    title: "Continual improvement",
-    desc: "Identified operational areas are reviewed and improved through a disciplined QMS cycle.",
-    icon: <TrendingUp size={22} strokeWidth={1.6} />,
-  },
-  {
-    code: "Q—04",
-    title: "Supported for life",
-    desc: "Commissioning, operator training and pattern-matched spares for every machine we ship.",
-    icon: <ShieldCheck size={22} strokeWidth={1.6} />,
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -60,11 +32,11 @@ export default function AboutPage() {
                 <span>/</span>
                 <span>About</span>
               </div>
-              <h1>
-                A workshop that became a <em>global supplier.</em>
+              <h1 style={{ maxWidth: "24ch" }}>
+                An enterprise that became a <em>global manufacturer &amp; supplier</em> to all major tea producing countries worldwide.
               </h1>
               <p className="lede">
-                Established 1997 in Kolkata. Today an ISO 9001-certified Star Export House with machinery running in more than twenty countries.
+                Established 1997 in Kolkata. Today an ISO 9001-certified Star Export House with complete CTC, Green Tea, and Orthodox machinery running in more than twenty countries.
               </p>
             </div>
           </div>
@@ -77,14 +49,14 @@ export default function AboutPage() {
             <span className="eyebrow">Our story</span>
             <div>
               <p className="big">
-                Gimpex began where trust in machinery usually begins: a solid relationship with the right manufacturers, and customers who{" "}
+                Gimpex Overseas Pvt. Ltd. began where trust in machinery usually begins: a solid relationship with the right manufacturers, and customers who{" "}
                 <em>could not afford a machine that failed mid-season.</em>
               </p>
               <p className="small">
-                The early work was for Assam and Dooars estates — sourcing and commissioning rollers, troughs and dryers that had to hold through a full flush. The discipline that period demanded still runs the company: source from proven manufacturers, test before despatch, commission nothing unproven.
+                The early work was for Assam and Dooars estates: manufacturing, sourcing and commissioning rollers, troughs and dryers that had to hold through a full flush. The discipline that period demanded still runs the company: manufacture and source with uncompromising precision, test before despatch, commission nothing unproven.
               </p>
               <p className="small" style={{ marginTop: "14px" }}>
-                Export began with East Africa in the 2000s. Kenyan and Rwandan factories wanted CTC lines they could maintain locally with simple tooling — a philosophy we already championed when sourcing from our manufacturing partners. From there the order book widened to Sri Lanka, Vietnam, Indonesia, Yunnan and Papua New Guinea.
+                Export began with East Africa in the 2000s. Kenyan and Rwandan factories wanted CTC and Orthodox lines they could maintain locally with simple tooling. From there the order book widened to Sri Lanka, Vietnam, Indonesia, Yunnan and Papua New Guinea.
               </p>
             </div>
           </div>
@@ -95,12 +67,12 @@ export default function AboutPage() {
               <span>Years of experience</span>
             </div>
             <div>
-              <b><StatCounter value={17} delay={100} /></b>
-              <span>Product lines</span>
+              <b><StatCounter value={50} suffix="+" delay={100} /></b>
+              <span>Projects completed</span>
             </div>
             <div>
-              <b><StatCounter value={70} suffix="+" delay={200} /></b>
-              <span>Client companies</span>
+              <b><StatCounter value={150} suffix="+" delay={200} /></b>
+              <span>Tea companies served</span>
             </div>
             <div>
               <b><StatCounter value={20} suffix="+" delay={300} /></b>
@@ -150,57 +122,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="sec" id="quality" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div className="panel dark on-dark">
-            <div className="sec-hd">
-              <div className="rv in">
-                <span className="eyebrow">Quality policy</span>
-                <h2>
-                  Written down, audited, <em>and kept.</em>
-                </h2>
-              </div>
-              <p className="lede rv in">
-                Our ISO 9001 quality management system commits us in writing to four things on every single order.
-              </p>
-            </div>
-
-            <div
-              className="pgrid6 rvg in"
-              style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}
-            >
-              {qualityCards.map((qc) => (
-                <div key={qc.code} className="pstep">
-                  <div className="ic">{qc.icon}</div>
-                  <span className="n">{qc.code}</span>
-                  <h3>{qc.title}</h3>
-                  <p>{qc.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="sec" style={{ paddingTop: 0 }}>
         <div className="container">
-          <div className="statement rv in">
-            <span className="eyebrow">Group</span>
-            <div>
-              <p className="big">
-                Our sister company <em>Gimpex Infratade</em> handles the group&apos;s metal and scrap trading — keeping our raw material supply chain in the family.
-              </p>
-            </div>
-          </div>
-
-          <div style={{ marginTop: "clamp(40px,5vw,64px)" }}>
-            <CtaBanner
-              eyebrow="Visit our office"
-              title="Our Kolkata office is open to clients by appointment."
-              buttonText="Arrange a meeting"
-              buttonHref="/contact"
-            />
-          </div>
+          <CtaBanner
+            eyebrow="Visit our office"
+            title="Our Kolkata office is open to clients by appointment."
+            buttonText="Arrange a meeting"
+            buttonHref="/contact"
+          />
         </div>
       </section>
     </>

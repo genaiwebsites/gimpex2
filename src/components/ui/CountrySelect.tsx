@@ -118,7 +118,7 @@ export const CountrySelect: React.FC<CountrySelectProps> = ({
       className="cs-wrap"
       onKeyDown={handleKeyDown}
     >
-      {/* Trigger — looks like the other form inputs */}
+      {/* Trigger - looks like the other form inputs */}
       <button
         type="button"
         id={inputId}

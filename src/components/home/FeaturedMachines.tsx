@@ -11,15 +11,15 @@ export const FeaturedMachines: React.FC = () => {
       <div className="container">
         <div className="sec-hd">
           <div className="rv in">
-            <span className="eyebrow">Our Products</span>
+            <span className="eyebrow">Our Machinery</span>
             <h2>
-              Sourced from world-class manufacturers.{" "}
+              Precision manufactured & supplied.{" "}
               <em>Commissioned for your estate.</em>
             </h2>
           </div>
           <div className="rv in">
             <p className="lede" style={{ marginBottom: "18px" }}>
-              Six of our most-specified machines — supplied and commissioned to your processing line by our team.
+              Six of our most-specified machines for complete CTC, Green Tea, and Orthodox processing lines, manufactured, supplied and commissioned by our team.
             </p>
             <Link className="btn btn-line" href="/products">
               <span>View all 17 machines</span>

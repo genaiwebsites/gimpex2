@@ -2,7 +2,7 @@
 
 import React from "react";
 import { StatCounter } from "@/components/ui/StatCounter";
-import { Calendar, PackageCheck, Users, Globe } from "@/components/ui/Icons";
+import { Calendar, ClipboardCheck, Users, Globe } from "@/components/ui/Icons";
 
 const stats = [
   {
@@ -13,14 +13,14 @@ const stats = [
     delay: 0,
   },
   {
-    value: 500,
+    value: 50,
     suffix: "+",
-    label: "Machines supplied",
-    icon: <PackageCheck size={18} strokeWidth={1.7} />,
+    label: "Projects completed",
+    icon: <ClipboardCheck size={18} strokeWidth={1.7} />,
     delay: 100,
   },
   {
-    value: 70,
+    value: 150,
     suffix: "+",
     label: "Tea companies served",
     icon: <Users size={18} strokeWidth={1.7} />,

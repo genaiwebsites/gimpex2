@@ -26,7 +26,7 @@ export const ClientMarquee: React.FC = () => {
     <section className="strip">
       <div className="container">
         <p className="cap">
-          Trusted by tea producers across India, Africa and South-East Asia
+          The Tea Machinery People · Trusted by 150+ tea producers across India, Africa and South-East Asia
         </p>
       </div>
       <div className="mq">

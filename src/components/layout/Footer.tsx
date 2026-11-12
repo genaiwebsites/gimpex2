@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
             <Link className="brand ft-brand" href="/" aria-label={`${siteConfig.fullName} - Home`}>
               <Image
                 src="/images/brand/gimpex-overseas-logo-white.png"
-                alt="Gimpex Overseas Private Limited — Tea Machinery Suppliers"
+                alt="Gimpex Overseas Pvt. Ltd. | Tea Machinery Manufacturers & Suppliers"
                 width={160}
                 height={36}
                 className="brand-logo"
@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
               />
             </Link>
             <p className="ft-about">
-              ISO 9001-certified Star Export House supplying complete tea processing lines to estates across four continents.
+              ISO 9001-certified Star Export House manufacturing and supplying complete CTC, Green Tea, and Orthodox tea processing lines across four continents.
             </p>
           </div>
 
@@ -44,7 +44,6 @@ export const Footer: React.FC = () => {
             <h5>Company</h5>
             <ul>
               <li><Link href="/about">About us</Link></li>
-              <li><Link href="/about#quality">Quality policy</Link></li>
               <li><Link href="/clients">Clients</Link></li>
               <li><Link href="/gallery">Gallery</Link></li>
               <li><Link href="/contact">Contact</Link></li>

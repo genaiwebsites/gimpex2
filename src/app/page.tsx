@@ -12,30 +12,30 @@ import { CtaBanner } from "@/components/ui/CtaBanner";
 export default function HomePage() {
   return (
     <>
-      {/* 1. Hero — Who we are, primary value proposition, direct CTAs */}
+      {/* 1. Hero - Who we are, primary value proposition, direct CTAs */}
       <Hero />
 
-      {/* 2. Client Marquee — Immediate authority and enterprise trust proofs */}
+      {/* 2. Client Marquee - Immediate authority and enterprise trust proofs */}
       <ClientMarquee />
 
-      {/* 3. Featured Machines — Immediate catalog visibility above the fold */}
+      {/* 3. Featured Machines - Immediate catalog visibility above the fold */}
       <FeaturedMachines />
 
-      {/* 4. Complete Tea Line Stages — Educates buyers on equipment per production phase */}
+      {/* 4. Complete Tea Line Stages - Educates buyers on equipment per production phase */}
       <ProcessGrid />
 
-      {/* 5. Enterprise Overview Showcase — Deep-dive tabs into Gimpex credentials, supply model & reach */}
+      {/* 5. Enterprise Overview Showcase - Deep-dive tabs into Gimpex credentials, supply model & reach */}
       <AboutTabs />
 
-      {/* 6. Technical Sourcing & Commissioning — How Gimpex validates, delivers & supports machinery */}
+      {/* 6. Technical Sourcing & Commissioning - How Gimpex validates, delivers & supports machinery */}
       <WorkshopSection />
 
-      {/* 7. Numbers & Key Milestones Bento Grid — Visual proof of scale and reliability */}
+      {/* 7. Numbers & Key Milestones Bento Grid - Visual proof of scale and reliability */}
       <BentoGrid />
 
       <div style={{ height: "clamp(48px, 6vw, 80px)" }} />
 
-      {/* 8. Global Export Network Map — Worldwide logistics and hub reach */}
+      {/* 8. Global Export Network Map - Worldwide logistics and hub reach */}
       <ExportRoutes />
 
       {/* 9. Final Action-Oriented Consultation CTA */}

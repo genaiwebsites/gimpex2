@@ -55,13 +55,13 @@ export const ProcessGrid: React.FC = () => {
         <div className="panel dark on-dark">
           <div className="sec-hd">
             <div className="rv in">
-              <span className="eyebrow">The tea line</span>
+              <span className="eyebrow">The Tea Machinery People · Tea Leaf to Tea</span>
               <h2>
                 Six stages between the field <em>and the chest.</em>
               </h2>
             </div>
             <p className="lede rv in">
-              We supply and commission equipment for every stage — as single machines or as a fully integrated line.
+              The Tea Machinery People: We manufacture, supply and commission equipment for every stage from tea leaf to tea, covering complete CTC, Green Tea, and Orthodox processing lines.
             </p>
           </div>
           <div className="pgrid6 rvg in">

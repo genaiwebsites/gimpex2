@@ -4,7 +4,7 @@
 
 :root,
 [data-theme="blue"] {
-  /* Gimpex Navy & Engineering Palette — derived from Gimpex Cog & Brand Logo */
+  /* Gimpex Navy & Engineering Palette - derived from Gimpex Cog & Brand Logo */
   --bg: #F4F7FB;
   --bg-2: #E8EFF8;
   --white: #FFFFFF;
@@ -2684,7 +2684,7 @@ p { margin: 0; }
   position: relative;
 }
 
-/* Trigger button — matches .fld input styling */
+/* Trigger button - matches .fld input styling */
 .cs-trigger {
   width: 100%;
   display: flex;
